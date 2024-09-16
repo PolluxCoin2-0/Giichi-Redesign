@@ -13,31 +13,31 @@ const ServicesSection = () => {
               Software Development
             </li>
             <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
-              Software Development
+              Web Development
             </li>
             <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
-              Software Development
+              Mobile App Development
             </li>
             <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
-              Software Development
+              Blockchain Development
             </li>
             <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
-              Software Development
+              Metaverse Development
             </li>
             <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
-              Software Development
+              Web3 Development
             </li>
             <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
-              Software Development
+              Digital Transformation
             </li>
             <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
-              Software Development
+              IT Consulting
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="w-[60%] bg-[#E9EFEC] p-12 flex flex-col justify-center gap-4 ">
+      <div className="w-[60%] bg-[#E6E5E6] p-12 flex flex-col justify-center gap-4 ">
         <p className="text-3xl font-bold ">Software Development</p>
         <p className="text-lg font-medium  leading-7">
           We offer steadfast and future-ready software development solutions for
@@ -46,7 +46,7 @@ const ServicesSection = () => {
         </p>
 
         <div className="flex flex-row justify-between space-x-4 w-full mt-5">
-          <div className=" w-[50%] p-4 bg-[#F7EFE5]  shadow-lg rounded-lg ">
+          <div className=" w-[50%] p-4 bg-[#F7FBFE]  shadow-lg rounded-lg ">
             <p className="text-xl font-semibold">
               Customer Software Development
             </p>
@@ -57,7 +57,7 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          <div className=" w-[50%] p-4 bg-[#F7EFE5] shadow-lg  rounded-lg ">
+          <div className=" w-[50%] p-4 bg-[#F7FBFE] shadow-lg  rounded-lg ">
             <p className="text-xl font-semibold">
               Customer Software Development
             </p>
@@ -69,7 +69,7 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className="w-full  mt-5 p-4 bg-[#F7EFE5] shadow-lg  rounded-lg ">
+        <div className="w-full  mt-5 p-4 bg-[#F7FBFE] shadow-lg  rounded-lg ">
           <p className="text-xl font-semibold">Customer Software Development</p>
           <p className="text-lg font-normal  pt-2 leading-8">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
@@ -79,7 +79,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="flex flex-row justify-between space-x-4 w-full mt-5">
-          <div className=" w-[50%] p-4 bg-[#F7EFE5]  shadow-lg rounded-lg ">
+          <div className=" w-[50%] p-4 bg-[#F7FBFE]  shadow-lg rounded-lg ">
             <p className="text-xl font-semibold">
               Customer Software Development
             </p>
@@ -90,7 +90,7 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          <div className=" w-[50%] p-4 bg-[#F7EFE5]  shadow-lg rounded-lg ">
+          <div className=" w-[50%] p-4 bg-[#F7FBFE]  shadow-lg rounded-lg ">
             <p className="text-xl font-semibold">
               Customer Software Development
             </p>

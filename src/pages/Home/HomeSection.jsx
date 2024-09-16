@@ -1,7 +1,7 @@
 import HeroSection from "../../../src/pages/Hero/HeroSection"
 import AboutSection from "../About/AboutSection";
 import ServicesSection from "../Services/ServicesSection";
-
+import SolutionsSection from "../Solutions/SolutionSection";
 const HomeSection = ()=> {
     return (
        <div>
@@ -15,6 +15,9 @@ const HomeSection = ()=> {
 
            {/* ServicesSection */}
            <ServicesSection />
+
+           {/* Solution Section */}
+           <SolutionsSection />
 
        </div>
     )
