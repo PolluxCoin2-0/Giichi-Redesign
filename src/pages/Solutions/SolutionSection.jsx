@@ -17,21 +17,21 @@ const SolutionSection = () => {
                 
                <div>
                 <div className="flex flex-row justify-between mt-6">
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl">ERP</div>
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl">CRM</div>
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center  text-lg font-semibold rounded-md shadow-xl">Inventory</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">ERP</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">CRM</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center  text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">Inventory</div>
                 </div>
 
                 <div className="flex flex-row justify-between mt-4">
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl">Enterprise Application</div>
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl">Data Analytics</div>
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center  text-lg font-semibold rounded-md shadow-xl">IT Service Management</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">Enterprise Application</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">Data Analytics</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center  text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">IT Service Management</div>
                 </div>
 
                 <div className="flex flex-row justify-between mt-4">
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl">Ecommerce</div>
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl">Digital Twin</div>
-                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center  text-lg font-semibold rounded-md shadow-xl">Web Portals</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">Ecommerce</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">Digital Twin</div>
+                    <div className="bg-[#000000] text-[#ffffff] w-[32%] p-4  text-center  text-lg font-semibold rounded-md shadow-xl transition-transform transform hover:scale-105">Web Portals</div>
                 </div>
                </div>
                </div>

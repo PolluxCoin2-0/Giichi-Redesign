@@ -31,7 +31,7 @@ const HeroSection = () => {
             </p>
 
             {/* Button */}
-            <button className="bg-[#000000] text-[#ffff] mt-8 button skew-x-12 rounded-tr-lg rounded-br-lg transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative z-10">
+            <button className="bg-[#000000]  text-[#ffff] mt-8 button skew-x-12 rounded-tr-lg rounded-br-lg transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative z-10">
               <a
                 href="#_"
                 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
@@ -58,6 +58,8 @@ const HeroSection = () => {
                 <span className="relative invisible">Talk to Experts</span>
               </a>
             </button>
+
+            
           </div>
         </div>
 
