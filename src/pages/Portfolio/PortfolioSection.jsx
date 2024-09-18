@@ -24,7 +24,7 @@ const PortfolioSection = () => {
     };
 
     return (
-        <div className="relative bg-[#000000] w-full flex flex-col items-start px-32 pt-20 pb-16">
+        <div className=" bg-[#000000] w-full flex flex-col items-start px-32 pt-24 pb-48">
             <div className="w-full flex flex-row justify-between items-center">
                 <div>
                     <p className="text-[#ffffff] text-4xl font-semibold">Portfolio</p>
@@ -56,39 +56,39 @@ const PortfolioSection = () => {
 
             {/* Conditionally render the NftPage component below */}
             {viewNft && (
-                <div className="absolute top-full left-0 w-full  bg-[#000000]  ">
+                <div className="  w-full  bg-[#000000]  ">
                     <NftPage />
                 </div>
            )}
 
 
             {viewExchange && (
-                <div className="absolute top-full left-0 w-full  bg-[#000000]  ">
+                <div className=" w-full  bg-[#000000]  ">
                     < ExchangePage />
                 </div>
            )}
 
 
                 {viewTokonomics && (
-                <div className="absolute top-full left-0 w-full  bg-[#000000]  ">
+                <div className=" w-full  bg-[#000000]  ">
                     < TokonomicsPage />
                 </div>
            )}
 
              {viewLaunchpad && (
-                <div className="absolute top-full left-0 w-full  bg-[#000000]  ">
+                <div className=" w-full  bg-[#000000]  ">
                     < LaunchpadPage />
                 </div>
            )}
 
             {viewMlm && (
-                <div className="absolute top-full left-0 w-full  bg-[#000000]  ">
+                <div className=" w-full  bg-[#000000]  ">
                     < MlmPage />
                 </div>
            )}
 
           {viewCryptoWallet && (
-                <div className="absolute top-full left-0 w-full  bg-[#000000]  ">
+                <div className=" w-full  bg-[#000000]  ">
                     < CryptoWalletPage />
                 </div>
            )}

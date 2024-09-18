@@ -2,7 +2,7 @@ import NftImg from "../../assets/nft_img.png";
 
 const ExchangePage = () => {
     return (
-        <div className="text-[#ffffff] bg-[#000000] px-32  flex flex-row space-x-12 justify-between ">
+        <div className="text-[#ffffff] bg-[#000000] pt-10  flex flex-row space-x-12 justify-between ">
            
         <div className="w-[50%]">
           <p className="text-5xl font-bold leading-tight">We Create Products That Users Love</p>
