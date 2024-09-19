@@ -3,3 +3,33 @@
 @tailwind utilities;
 
 
+/* FaqSection.css */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+  }
+  
+  .faq-content.expanded {
+    max-height: 500px; /* Or any sufficiently large value to fit the content */
+  }
+  
+  .faq-content.collapsed {
+    max-height: 0;
+  }
+  
+
+ 
+  @keyframes scaleUpDown {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .animated-icon {
+    animation: scaleUpDown 3s ease-in-out infinite;
+  }
+  

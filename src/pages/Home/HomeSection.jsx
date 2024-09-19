@@ -13,6 +13,8 @@ import TeamSection from "../Team/TeamSection";
 import OpportunitySection from "../Opportunities/OpportunitySection";
 import RewardsSection from "../Rewards/RewardSection";
 import FaqSection from "../Faq/FaqSection";
+import ContactFormSection from "../ContactForm/ContactFormSection";
+import Footer from "../../layout/Footer";
 
 const HomeSection = ()=> {
     return (
@@ -66,6 +68,12 @@ const HomeSection = ()=> {
 
            {/* FAQ Section */}
            <FaqSection />
+
+           {/* Contact Us Form */}
+           <ContactFormSection />
+
+           {/* Footer Section */}
+           <Footer />
 
        </div>
     )
