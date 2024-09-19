@@ -6,7 +6,7 @@ const AboutSection = () => {
             
             <div className=" flex flex-row justify-between items-center mt-10 w-full">
 
-            <div className=" w-[30%] ">
+            <div className=" w-[40%] ">
             <p className="text-2xl font-bold">Award Winning</p>
             <p className="text-5xl font-bold leading-tight mt-8 ">Software Development <br/> Company</p>
             <img src={HeroImg} alt="" className="" />

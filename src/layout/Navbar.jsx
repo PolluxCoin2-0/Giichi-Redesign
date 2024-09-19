@@ -100,68 +100,68 @@ const Navbar = () => {
         {/* Logo */}
         <img src={GiichiLogoImg} alt="Logo" className="h-10" />
         {/* Menu Icon */}
-        <p onClick={toggleNavbar}>
+        <p className=" hover:text-yellow" onClick={toggleNavbar}>
           <CgMenuLeft size={44} />
         </p>
       </div>
 
-      {/* Conditional Rendering for Sidebar */}
-      {viewNavbar && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-[#000000] text-white flex flex-col px-32 pt-8 z-50">
-          <div className="flex flex-row justify-between items-center">
-            <img src={GiichiLogoLight} alt="Logo" className="h-10" />
-            <ImCross
-              size={24}
-              onClick={closeNavbar}
-              className="cursor-pointer text-[#ffffff]"
-            />
-          </div>
-          {/* Nav items */}
-          <div className="flex flex-row space-x-10 mt-8">
-            <ul className="flex flex-col space-y-12">
-              <li
-                className="text-[#ffffff] text-2xl font-semibold cursor-pointer"
-                onClick={() => toggleSection("services")}
-              >
-                Services
-              </li>
-              <li
-                className="text-[#ffffff] text-2xl font-semibold"
-                onClick={() => toggleSection("products")}
-              >
-                Products
-              </li>
-              <li
-                className="text-[#ffffff] text-2xl font-semibold"
-                onClick={() => toggleSection("industries")}
-              >
-                Industries
-              </li>
-              <li
-                className="text-[#ffffff] text-2xl font-semibold"
-                onClick={() => toggleSection("company")}
-              >
-                Company
-              </li>
-              <li className="text-[#ffffff] text-2xl font-semibold">
-                Our Work
-              </li>
-              <li className="text-[#ffffff] text-2xl font-semibold">Blogs</li>
-              <li className="text-[#ffffff] text-2xl font-semibold">
-                Contact Us
-              </li>
-              <li className="text-[#ffffff] text-2xl font-semibold">
-                Contacts
-              </li>
-            </ul>
-            {/* Conditional Content Sections */}
-            {viewServices && <ContentSection items={services} />}
-            {viewProducts && <ContentSection items={products} />}
-            {viewIndustries && <ContentSection items={industries} />}
-            {viewCompany && <ContentSection items={company} />}
-          </div>
+      {/* Sidebar with animation */}
+      <div
+        className={`fixed top-0 left-0 w-full h-screen bg-[#000000] text-white flex flex-col px-32 pt-8 z-50 transition-transform duration-1000 ease-in-out ${
+          viewNavbar ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-row justify-between items-center">
+          <img src={GiichiLogoLight} alt="Logo" className="h-10" />
+          <ImCross
+            size={24}
+            onClick={closeNavbar}
+            className="cursor-pointer text-[#ffffff] hover:text-yellow"
+          />
         </div>
-      )}
+        {/* Nav items */}
+        <div className="flex flex-row space-x-10 mt-8">
+          <ul className="flex flex-col space-y-12">
+            <li
+              className="text-[#ffffff] text-2xl font-semibold cursor-pointer"
+              onClick={() => toggleSection("services")}
+            >
+              Services
+            </li>
+            <li
+              className="text-[#ffffff] text-2xl font-semibold"
+              onClick={() => toggleSection("products")}
+            >
+              Products
+            </li>
+            <li
+              className="text-[#ffffff] text-2xl font-semibold"
+              onClick={() => toggleSection("industries")}
+            >
+              Industries
+            </li>
+            <li
+              className="text-[#ffffff] text-2xl font-semibold"
+              onClick={() => toggleSection("company")}
+            >
+              Company
+            </li>
+            <li className="text-[#ffffff] text-2xl font-semibold">
+              Our Work
+            </li>
+            <li className="text-[#ffffff] text-2xl font-semibold">Blogs</li>
+            <li className="text-[#ffffff] text-2xl font-semibold">
+              Contact Us
+            </li>
+            <li className="text-[#ffffff] text-2xl font-semibold">Contacts</li>
+          </ul>
+          {/* Conditional Content Sections */}
+          {viewServices && <ContentSection items={services} />}
+          {viewProducts && <ContentSection items={products} />}
+          {viewIndustries && <ContentSection items={industries} />}
+          {viewCompany && <ContentSection items={company} />}
+        </div>
+      </div>
     </div>
   );
 };

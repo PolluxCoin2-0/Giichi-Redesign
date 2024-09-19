@@ -5,7 +5,7 @@ const ServicesSection = () => {
         <p className="text-2xl font-bold text-end">Services</p>
         <p className="text-4xl font-bold text-end mt-5">
           Lorem ipsum dolor sit amet consectetur. <br />
-          Eveniet, odio.
+        
         </p>
         <div className="mt-10">
           <ul>

@@ -2,7 +2,7 @@
 import HeroSection from "../src/pages/Hero/HeroSection";
 // import AboutSection from "../src/pages/About/AboutSection";
 import HomeSection from "./pages/Home/HomeSection";
-
+import ContactPopUp from "./comopnents/ContactPopUp";
 import {
   BrowserRouter as Router,
   Route,
@@ -23,6 +23,7 @@ function App() {
           {/* <Route path="/aboutSection" element={<AboutSection />}/> */}
           <Route path="/" element={<HomeSection />} />
           <Route path="/home" element={<HomeSection />} />
+          <Route path="/contact" element={<ContactPopUp />}/>
         </Routes>
       </Router>
     </div>

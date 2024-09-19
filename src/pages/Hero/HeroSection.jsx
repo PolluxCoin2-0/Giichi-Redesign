@@ -1,22 +1,31 @@
+import { useState } from "react";
 import Navbar from "../../layout/Navbar";
 import HeroImg from "../../assets/banner_img_home.png";
 import { IoIosChatbubbles } from "react-icons/io";
+import ContactPopUp from "../ContactPopUp"; // Adjust the path as needed
+
 const HeroSection = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div>
-      {/* Navabar  */}
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
 
-      {/* Hero-section */}
       <div className="flex flex-row justify-between items-center px-32 bg-[#569F42] h-screen">
         <div>
-          <p className="text-[64px] font-bold -mt-48 text-[#ffff] leading-snug">
+          <p className="text-[60px] font-bold -mt-48 text-[#ffff] leading-snug">
             Modernizing And <br />
             Transforming Businesses <br /> Digitally To Move Forward
           </p>
-          <p className="mt-6 text-2xl font-medium leading-8 tracking-wide">
+          <p className="mt-6 text-xl font-medium leading-8 tracking-wide">
             Embrace our visionary software development services to navigate the
             ever- <br />
             changing business landscape. We help you stay ahead of industry
@@ -25,13 +34,14 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-row items-center group relative">
-            {/* Chat Icon */}
             <p className="mt-8 text-[#ffffff] bg-[#383934] px-2 py-2 -mr-2 rounded-tl-3xl rounded-bl-3xl">
               <IoIosChatbubbles size={20} />
             </p>
 
-            {/* Button */}
-            <button className="bg-[#000000]  text-[#ffff] mt-8 button skew-x-12 rounded-tr-lg rounded-br-lg transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative z-10">
+            <button
+              onClick={handleButtonClick}
+              className="bg-[#000000] text-[#ffff] mt-8 button skew-x-12 rounded-tr-lg rounded-br-lg transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative z-10"
+            >
               <a
                 href="#_"
                 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
@@ -58,8 +68,6 @@ const HeroSection = () => {
                 <span className="relative invisible">Talk to Experts</span>
               </a>
             </button>
-
-            
           </div>
         </div>
 
@@ -67,6 +75,11 @@ const HeroSection = () => {
           <img src={HeroImg} alt="hero-image" className="" />
         </div>
       </div>
+
+      {/* Contact PopUp */}
+      {isPopupOpen && (
+        <ContactPopUp onClose={handleClosePopup} />
+      )}
     </div>
   );
 };
