@@ -146,9 +146,7 @@ const Navbar = () => {
             >
               Company
             </li>
-            <li className="text-[#ffffff] text-2xl font-semibold">
-              Our Work
-            </li>
+            <li className="text-[#ffffff] text-2xl font-semibold">Our Work</li>
             <li className="text-[#ffffff] text-2xl font-semibold">Blogs</li>
             <li className="text-[#ffffff] text-2xl font-semibold">
               Contact Us
