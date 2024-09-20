@@ -74,7 +74,7 @@ const PartnersSection = () => {
   };
 
   return (
-    <div className="bg-green flex flex-row justify-between  px-32 w-full pt-32 pb-32">
+    <div className="bg-green flex flex-row justify-between  px-4 md:px-32 w-full pt-32 pb-32">
       <div className="w-[50%]">
         <p className="text-3xl font-bold">Partners</p>
         <p className="text-5xl font-bold leading-snug pt-6 text-[#ffffff]">

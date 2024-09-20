@@ -19,9 +19,9 @@ const HeroSection = () => {
     <div>
       <Navbar />
 
-      <div className="flex flex-row justify-between items-center px-32 bg-[#569F42] h-screen">
+      <div className="flex flex-row justify-between items-center px-4 md:px-32 bg-[#569F42] h-screen">
         <div>
-          <p className="text-[60px] font-bold -mt-48 text-[#ffff] leading-snug">
+          <p className="text-lg md:text-[60px] font-bold -mt-48 text-[#ffff] leading-snug">
             Modernizing And <br />
             Transforming Businesses <br /> Digitally To Move Forward
           </p>

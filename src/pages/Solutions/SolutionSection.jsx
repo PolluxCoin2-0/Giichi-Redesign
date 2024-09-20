@@ -3,7 +3,7 @@ import SolutionImg from "../../assets/solution_img.png";
 const SolutionSection = () => {
     return (
         <div >
-            <div className="bg-purple-gradient flex flex-row items-center space-x-56 px-32 pt-20 pb-8">
+            <div className="bg-purple-gradient flex flex-row items-center space-x-56 px-4 md:px-32 pt-20 pb-8">
            
                <div>
                 <img src={SolutionImg} alt="" className="w-[600px]" />

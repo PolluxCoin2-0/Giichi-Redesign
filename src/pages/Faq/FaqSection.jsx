@@ -35,7 +35,7 @@ const FaqSection = () => {
   ];
 
   return (
-    <div className="bg-[#F7B611] px-32 pt-20 pb-64">
+    <div className="bg-[#F7B611] px-4 md:px-32 pt-20 pb-64">
       <p className="text-3xl font-bold ">FAQ</p>
       <p className="text-5xl font-bold text-[#ffffff] mt-4 leading-tight">
         Solve the un-solved queries on <br /> your mind

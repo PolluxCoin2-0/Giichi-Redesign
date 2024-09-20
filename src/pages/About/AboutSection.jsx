@@ -2,7 +2,7 @@ import HeroImg from "../../assets/banner_img_home.png";
 
 const AboutSection = () => {
   return (
-    <div className="px-32 relative ">
+    <div className="px-4 md:px-32 relative ">
       <div className=" flex flex-row justify-between items-center mt-10 w-full">
         <div className=" w-[40%] ">
           <p className="text-2xl font-bold">Award Winning</p>
@@ -13,7 +13,7 @@ const AboutSection = () => {
         </div>
 
         <div className="w-[50%] ">
-          <p className="text-xl font-semibold">
+          <p className="text-sm md:text-xl font-semibold">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ipsa
             atque repellendus <br /> aperiam ipsam veritatis doloribus ipsum
             deserunt beatae, accusamus omnis incidunt? Suscipit <br />

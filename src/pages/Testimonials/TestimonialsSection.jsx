@@ -4,7 +4,7 @@ import { IoStarSharp } from "react-icons/io5";
 
 const TestimonialsSection = () => {
   return (
-    <div className="bg-[#000000] flex flex-row  justify-center px-64 pt-24 pb-32">
+    <div className="bg-[#000000] flex flex-row  justify-center px-4 md:px-64 pt-24 pb-32">
       <div>
         <p className="text-[#ffffff] text-4xl font-semibold">Testimonials</p>
         <p className="text-[#ffffff] text-6xl font-bold pt-8 leading-tight">

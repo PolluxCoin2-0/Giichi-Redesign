@@ -34,7 +34,7 @@ const OpportunitySection = () => {
 
 
     return (
-        <div className="bg-[#000000] px-32 pt-20 pb-20 flex flex-row justify-between w-full">
+        <div className="bg-[#000000] px-4 md:px-32 pt-20 pb-20 flex flex-row justify-between w-full">
 
             <div className="w-[40%]">
                 <p className="text-7xl text-[#ffffff] font-bold leading-tight">WHY CHOOSE <br/> US?</p>

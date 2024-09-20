@@ -44,7 +44,7 @@ const BlogsSection = () => {
   };
 
   return (
-    <div className="bg-[#000000] pt-20 pb-32  text-center px-32 ">
+    <div className="bg-[#000000] pt-20 pb-32  text-center px-4 md:px-32 ">
       <p className="text-3xl font-bold text-[#ffffff]">Blog</p>
       <p className="text-5xl font-bold text-[#ffffff] mt-5">
         Ink and Insights - Dive into our Blog

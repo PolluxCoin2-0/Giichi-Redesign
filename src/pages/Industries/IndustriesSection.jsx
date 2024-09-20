@@ -13,7 +13,7 @@ import { TbSocial } from "react-icons/tb";
 
 const IndustriesSection = () => {
   return (
-    <div className="bg-purple-gradient w-full flex flex-row space-x-10 px-32 pt-24 pb-24">
+    <div className="bg-purple-gradient w-full flex flex-row space-x-10 px-4 md:px-32 pt-24 pb-24">
       <div className="w-[40%]">
         <p className="text-3xl font-bold mt-5">Industries</p>
         <p className="text-5xl font-bold leading-snug pt-6">

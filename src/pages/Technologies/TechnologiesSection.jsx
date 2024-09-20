@@ -2,7 +2,7 @@ import TechImg  from "../../assets/tech_img.png";
 
 const TechnologiesSection = () => {
     return (
-        <div className="bg-[#000000] flex flex-row items-center space-x-12 px-32 pt-20 pb-8">
+        <div className="bg-[#000000] flex flex-row items-center space-x-12 px-4 md:px-32 pt-20 pb-8">
             
             <div>
                 <img src={TechImg} alt="" className="w-[740px]" />
