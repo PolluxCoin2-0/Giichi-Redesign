@@ -1,4 +1,27 @@
+import { useState } from "react";
+import ContactPopUp from "../../comopnents/ContactPopUp";
+import GetQuote from "../../comopnents/GetQuote";
+
 const ContactsSection = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+
+  const handleButtonClick1 = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup1 = () => {
+    setIsPopupOpen(false);
+  };
+
+  const handleButtonClick2 = () => {
+    setIsQuoteOpen(true);
+  };
+
+  const handleClosePopup2 = () => {
+    setIsQuoteOpen(false);
+  };
+
     return (
         <div className="bg-purple-gradient text-center pt-32 pb-32">
                <p className="text-3xl font-bold ">Talk To Us</p>
@@ -8,7 +31,11 @@ const ContactsSection = () => {
                <div className="flex flex-row justify-center space-x-5 mt-8">
               <div>
                   {/* Button */}
-            <button className="bg-[#569F42]   text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative z-10">
+            <button className={`bg-[#569F42]   text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
+              ${
+                isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
+              }`}
+              onClick={handleButtonClick1}>
               <a
                 href="#_"
                 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
@@ -39,7 +66,11 @@ const ContactsSection = () => {
 
               <div>
                   {/* Button */}
-            <button className="bg-[#569F42]  text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative z-10">
+            <button className={`bg-[#569F42]  text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
+              ${
+                isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
+              }`}
+              onClick={handleButtonClick2}>
               <a
                 href="#_"
                 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
@@ -67,6 +98,14 @@ const ContactsSection = () => {
               </a>
             </button>
               </div>
+
+                {/* Contact PopUp */}
+        {isPopupOpen && (
+          <ContactPopUp onClose={handleClosePopup1} className="z-50" />
+        )}
+        {isQuoteOpen && (
+          <GetQuote onClose={handleClosePopup2} className="z-50" />
+        )}
              </div>
         </div>
     )

@@ -6,6 +6,8 @@ import LaunchpadPage from "./LauchpagPage";
 import MlmPage from "./MlmPage";
 import CryptoWalletPage from "./CryptoWalletPage";
 
+
+
 const PortfolioSection = () => {
     const [viewNft, setViewNft] = useState(true);
     const [viewExchange, setViewExchange] = useState(false);
@@ -22,6 +24,8 @@ const PortfolioSection = () => {
         setViewMlm(section === "Mlm");
         setViewCryptoWallet(section === "Cryptowallet");
     };
+
+  
 
     return (
         <div className=" bg-[#000000] w-full flex flex-col items-start px-32 pt-24 pb-48">
@@ -92,6 +96,9 @@ const PortfolioSection = () => {
                     < CryptoWalletPage />
                 </div>
            )}
+
+
+          
         </div>
     );
 };

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../../layout/Navbar";
 import HeroImg from "../../assets/banner_img_home.png";
 import { IoIosChatbubbles } from "react-icons/io";
-import ContactPopUp from "../ContactPopUp"; // Adjust the path as needed
+import ContactPopUp from "../../comopnents/ContactPopUp"; 
 
 const HeroSection = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -77,9 +77,7 @@ const HeroSection = () => {
       </div>
 
       {/* Contact PopUp */}
-      {isPopupOpen && (
-        <ContactPopUp onClose={handleClosePopup} />
-      )}
+      {isPopupOpen && <ContactPopUp onClose={handleClosePopup} />}
     </div>
   );
 };

@@ -1,107 +1,142 @@
+import { useState } from "react";
+import SoftwarePage from "./SoftwarePage";
+import WebPage from "./WebPage";
+import MobilePage from "./MobilePage";
+import BlockchainPage from "./BlockchainPage";
+import MetaversePage from "./MetaversePage";
+import Web3Page from "./Web3Page";
+import DigitalPage from "./DigitalPage";
+import ConsultPage from "./ConsultPage";
+
 const ServicesSection = () => {
+  const [viewSoftwareDev, setViewSoftwareDev] = useState(true);
+  const [viewWebDev, setViewWebDev] = useState(false);
+  const [viewMobileDev, setViewMobileDev] = useState(false);
+  const [viewBlockchain, setViewBlockchain] = useState(false);
+  const [viewMetaverse, setViewMetaverse] = useState(false);
+  const [viewWeb3, setViewWeb3] = useState(false);
+  const [viewDigital, setViewDigital] = useState(false);
+  const [viewConsult, setViewConsult] = useState(false);
+
+  const toggleSection = (section) => {
+    setViewSoftwareDev(section === "SoftwarePage");
+    setViewWebDev(section === "WebPage");
+    setViewMobileDev(section === "MobilePage");
+    setViewBlockchain(section === "BlockchainPage");
+    setViewMetaverse(section === "MetaversePage");
+    setViewWeb3(section === "Web3Page");
+    setViewDigital(section === "DigitalPage");
+    setViewConsult(section === "ConsultPage");
+  };
   return (
     <div className=" mt-32 w-full flex flex-row justify-between ">
-      <div className="w-[40%] bg-[#FBC901] p-12">
-        <p className="text-2xl font-bold text-end">Services</p>
-        <p className="text-4xl font-bold text-end mt-5">
-          Lorem ipsum dolor sit amet consectetur. <br />
-        
+      <div className="w-[40%] bg-[#FBC901] ">
+        <p className="text-2xl font-bold text-end pr-12 pt-12 ">Services</p>
+        <p className="text-4xl font-bold text-end mt-5 pl-6 pr-12  ">
+          No Matter Whatever You Need, We Build
         </p>
         <div className="mt-10">
           <ul>
-            <li className="text-xl font-semibold p-5 w-full hover:bg-[#EDBF08]">
+            <li
+              className="text-xl font-semibold p-5 w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("SoftwarePage")}
+            >
               Software Development
             </li>
-            <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
+
+            <li
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("WebPage")}
+            >
               Web Development
             </li>
-            <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
+
+            <li
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("MobilePage")}
+            >
               Mobile App Development
             </li>
-            <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
+
+            <li
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("BlockchainPage")}
+            >
               Blockchain Development
             </li>
-            <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
+
+            <li
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("MetaversePage")}
+            >
               Metaverse Development
             </li>
-            <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
+
+            <li
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("Web3Page")}
+            >
               Web3 Development
             </li>
-            <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
+
+            <li
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("DigitalPage")}
+            >
               Digital Transformation
             </li>
-            <li className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08]">
+
+            <li
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              onClick={() => toggleSection("ConsultPage")}
+            >
               IT Consulting
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="w-[60%] bg-[#E6E5E6] p-12 flex flex-col justify-center gap-4 ">
-        <p className="text-3xl font-bold ">Software Development</p>
-        <p className="text-lg font-medium  leading-7">
-          We offer steadfast and future-ready software development solutions for
-          businesses and startups. Leverage our technical expertise to <br />
-          create bespoke software solutions for your business.
-        </p>
-
-        <div className="flex flex-row justify-between space-x-4 w-full mt-5">
-          <div className=" w-[50%] p-4 bg-[#F7FBFE]  shadow-lg rounded-lg ">
-            <p className="text-xl font-semibold">
-              Customer Software Development
-            </p>
-            <p className="text-lg font-normal pt-2 leading-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
-              Officia animi distinctio quisquam esse corporis doloremque <br />
-              molestias aspernatur quidem alias cupiditate.
-            </p>
-          </div>
-
-          <div className=" w-[50%] p-4 bg-[#F7FBFE] shadow-lg  rounded-lg ">
-            <p className="text-xl font-semibold">
-              Customer Software Development
-            </p>
-            <p className="text-lg font-normal  pt-2 leading-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-              animi distinctio quisquam esse corporis doloremque molestias
-              aspernatur quidem alias cupiditate.
-            </p>
-          </div>
+      {/* Conditionally render the NftPage component below */}
+      {viewSoftwareDev && (
+        <div className="w-[60%]  ">
+          <SoftwarePage />
         </div>
-
-        <div className="w-full  mt-5 p-4 bg-[#F7FBFE] shadow-lg  rounded-lg ">
-          <p className="text-xl font-semibold">Customer Software Development</p>
-          <p className="text-lg font-normal  pt-2 leading-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-            animi distinctio quisquam esse corporis doloremque molestias
-            aspernatur quidem alias cupiditate.
-          </p>
+      )}
+      {viewWebDev && (
+        <div className="w-[60%]  ">
+          <WebPage />
         </div>
-
-        <div className="flex flex-row justify-between space-x-4 w-full mt-5">
-          <div className=" w-[50%] p-4 bg-[#F7FBFE]  shadow-lg rounded-lg ">
-            <p className="text-xl font-semibold">
-              Customer Software Development
-            </p>
-            <p className="text-lg font-normal  pt-2 leading-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
-              Officia animi distinctio quisquam esse corporis doloremque <br />
-              molestias aspernatur quidem alias cupiditate.
-            </p>
-          </div>
-
-          <div className=" w-[50%] p-4 bg-[#F7FBFE]  shadow-lg rounded-lg ">
-            <p className="text-xl font-semibold">
-              Customer Software Development
-            </p>
-            <p className="text-lg font-normal  pt-2 leading-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
-              Officia animi distinctio quisquam esse corporis doloremque <br />
-              molestias aspernatur quidem alias cupiditate.
-            </p>
-          </div>
+      )}
+      {viewMobileDev && (
+        <div className="w-[60%]  ">
+          <MobilePage />
         </div>
-      </div>
+      )}
+      {viewBlockchain && (
+        <div className="w-[60%]  ">
+          <BlockchainPage />
+        </div>
+      )}
+      {viewMetaverse && (
+        <div className="w-[60%]  ">
+          <MetaversePage />
+        </div>
+      )}
+      {viewWeb3 && (
+        <div className="w-[60%]  ">
+          <Web3Page />
+        </div>
+      )}
+      {viewDigital && (
+        <div className="w-[60%]  ">
+          <DigitalPage />
+        </div>
+      )}
+      {viewConsult && (
+        <div className="w-[60%]  ">
+          <ConsultPage />
+        </div>
+      )}
     </div>
   );
 };

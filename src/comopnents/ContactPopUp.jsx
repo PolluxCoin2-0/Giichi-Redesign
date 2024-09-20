@@ -45,7 +45,7 @@ const ContactPopUp = ({ onClose }) => {
       >
         <div
           onClick={onClose}
-          className="absolute top-[-20px] left-[-20px] bg-[#EDBF08] p-2 rounded-full z-10 cursor-pointer"
+          className="absolute top-[-20px] left-[-20px] bg-[#EDBF08] p-2 rounded-full z-10 cursor-pointer text-[#000000]"
         >
           <IoClose size={20} />
         </div>
