@@ -1,8 +1,9 @@
 import { useState } from "react";
+import NftImg from "../../assets/nft_img.png";
 import ContactPopUp from "../../comopnents/ContactPopUp";
 import GetQuote from "../../comopnents/GetQuote";
 
-const ContactsSection = () => {
+const CryptoWalletPage = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
@@ -22,20 +23,44 @@ const ContactsSection = () => {
     setIsQuoteOpen(false);
   };
 
-    return (
-        <div className="bg-purple-gradient text-center pt-32 pb-32">
-               <p className="text-3xl font-bold ">Talk To Us</p>
-               <p className="text-6xl font-bold leading-tight mt-5">Empower Your Business with Our Fine <br/> Tuned  Digital Solutions</p>
-               <p className="text-xl font-medium mt-5">Take the First Step in creating a better tomorrow by joining hands with Giichi.</p>
+  return (
+    <div className="text-[#ffffff] bg-[#000000] pt-10  flex flex-row space-x-12 justify-between ">
+      <div className="w-[50%]">
+        <p className="text-5xl font-bold leading-tight">
+          We Create Products That Users Love
+        </p>
+        <p className="text-lg font-normal pt-6">
+          Get a Glimpse of our Dynamic Portfolio, illustrating our
+          Record-breaking Products.
+        </p>
+        <img src={NftImg} alt="" className="w-[700px] text-center " />
+      </div>
 
-               <div className="flex flex-row justify-center space-x-5 mt-8">
-              <div>
-                  {/* Button */}
-            <button className={`bg-[#569F42]   text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
-              ${
-                isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
-              }`}
-              onClick={handleButtonClick1}>
+      <div className="w-[50%]">
+        <p className="text-[#ffffff] text-3xl font-semibold pt-20">
+          Crypto Wallet
+        </p>
+        <p className="text-[#ffffff] text-5xl font-semibold pt-8">
+          Crypto Wallet
+        </p>
+
+        <p className="text-[#ffffff] text-lg font-normal pt-8 leading-8">
+          Have plans to kick-start your own NFT marketplace? You are in the
+          right place! Maticz has developed <br /> and successfully launched
+          more than 50+ NFT marketplaces which are now top-performing in the{" "}
+          <br /> market. We are the pro-players in developing NFT marketplaces
+          on various blockchain networks like Ethereum, Binance Chain, Solana,
+          Polygon, Avalance, etc
+        </p>
+
+        <div className="flex flex-row space-x-5">
+          <div>
+            {/* Button */}
+            <button
+              className={`bg-[#569F42]   text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
+           ${isPopupOpen || isQuoteOpen ? "z-0" : "z-10"}`}
+              onClick={handleButtonClick1}
+            >
               <a
                 href="#_"
                 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
@@ -62,15 +87,15 @@ const ContactsSection = () => {
                 <span className="relative invisible">Talk to Experts</span>
               </a>
             </button>
-              </div>
+          </div>
 
-              <div>
-                  {/* Button */}
-            <button className={`bg-[#569F42]  text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
-              ${
-                isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
-              }`}
-              onClick={handleButtonClick2}>
+          <div>
+            {/* Button */}
+            <button
+              className={`bg-[#569F42]  text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
+           ${isPopupOpen || isQuoteOpen ? "z-0" : "z-10"}`}
+              onClick={handleButtonClick2}
+            >
               <a
                 href="#_"
                 className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
@@ -97,17 +122,19 @@ const ContactsSection = () => {
                 <span className="relative invisible">Talk to Experts</span>
               </a>
             </button>
-              </div>
+          </div>
+        </div>
 
-                {/* Contact PopUp */}
+        {/* Contact PopUp */}
         {isPopupOpen && (
           <ContactPopUp onClose={handleClosePopup1} className="z-50" />
         )}
         {isQuoteOpen && (
           <GetQuote onClose={handleClosePopup2} className="z-50" />
         )}
-             </div>
-        </div>
-    )
-}
- export default ContactsSection;
+      </div>
+    </div>
+  );
+};
+
+export default CryptoWalletPage;

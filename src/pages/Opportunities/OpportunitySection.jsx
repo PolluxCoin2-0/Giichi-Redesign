@@ -1,8 +1,18 @@
 import { useState } from "react";
+import HeroImg from "../../assets/banner_img_home.png";
 import ContactPopUp from "../../comopnents/ContactPopUp";
 import GetQuote from "../../comopnents/GetQuote";
+import ProgressBar from "../../comopnents/ProgressBar";
 
-const ContactsSection = () => {
+
+const testData = [
+    { bgcolor: "#F7B611", completed: 60, title: "No. of Clients", value: "200+",},
+    { bgcolor: "#F7B611", completed: 50, title: "Delivered Projects", value: "150+", },
+    { bgcolor: "#F7B611", completed: 65, title: "No. of Employees", value: "80+",},
+  ];
+
+const OpportunitySection = () => {
+
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
@@ -22,17 +32,48 @@ const ContactsSection = () => {
     setIsQuoteOpen(false);
   };
 
-    return (
-        <div className="bg-purple-gradient text-center pt-32 pb-32">
-               <p className="text-3xl font-bold ">Talk To Us</p>
-               <p className="text-6xl font-bold leading-tight mt-5">Empower Your Business with Our Fine <br/> Tuned  Digital Solutions</p>
-               <p className="text-xl font-medium mt-5">Take the First Step in creating a better tomorrow by joining hands with Giichi.</p>
 
-               <div className="flex flex-row justify-center space-x-5 mt-8">
+    return (
+        <div className="bg-[#000000] px-32 pt-20 pb-20 flex flex-row justify-between w-full">
+
+            <div className="w-[40%]">
+                <p className="text-7xl text-[#ffffff] font-bold leading-tight">WHY CHOOSE <br/> US?</p>
+                
+          <img src={HeroImg} alt="hero-image" className="w-[600px]" />
+        
+            </div>
+
+            <div className="w-[60%]">
+                <p className="text-5xl text-[#ffffff] font-bold leading-tight  ">Maximizing Opportunities for <br/>Businesses with Our Values</p>
+
+                <p className="text-md text-[#a8a5a5] mt-4   ">Maticz is your one-stop solution for all your software development demands and requirements. From concept ideation to <br/>
+                post-launch support, our comprehensive services cover every stage of the software lifecycle. With a proven track record of <br/>
+                delivering exceptional solutions, we have garnered a reputation as a leading force in the industry. We value your feedback <br/>and 
+                work collaboratively with you to address any concerns, ensuring that the final product is precisely what you envision.</p>
+                <p className="text-md text-[#a8a5a5] mt-4  ">Our tailored approach ensures that we understand your specific requirements and 
+                deliver results that exceed expectations. <br/> Our team consists of seasoned professionals and creative minds who thrive on pushing the boundaries of technology, and <br/>
+                bring fresh perspectives and ingenious solutions to every project. We keep you involved at every stage, providing transparent <br/>
+                communication and delivering on time and within budget.</p>
+                 
+                 {/* Progress Bar */}
+                <div >
+      {testData.map((item, idx) => (
+        <ProgressBar
+          key={idx}
+          bgcolor={item.bgcolor}
+          completed={item.completed}
+          title={item.title}
+          value={item.value} // Pass the value prop here
+        />
+      ))}
+    </div>
+
+{/* Buttons */}
+    <div className="flex flex-row  space-x-5 mt-4">
               <div>
                   {/* Button */}
             <button className={`bg-[#569F42]   text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
-              ${
+                ${
                 isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
               }`}
               onClick={handleButtonClick1}>
@@ -67,7 +108,7 @@ const ContactsSection = () => {
               <div>
                   {/* Button */}
             <button className={`bg-[#569F42]  text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
-              ${
+                ${
                 isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
               }`}
               onClick={handleButtonClick2}>
@@ -98,16 +139,23 @@ const ContactsSection = () => {
               </a>
             </button>
               </div>
-
-                {/* Contact PopUp */}
+             </div>
+           
+           {/* Contact PopUp */}
         {isPopupOpen && (
           <ContactPopUp onClose={handleClosePopup1} className="z-50" />
         )}
         {isQuoteOpen && (
           <GetQuote onClose={handleClosePopup2} className="z-50" />
         )}
-             </div>
+            </div>
+
+        
+
+
+         
         </div>
     )
 }
- export default ContactsSection;
+
+export default OpportunitySection;

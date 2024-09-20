@@ -21,7 +21,8 @@ export default {
       },
 
     backgroundImage: {
-      'purple-gradient': 'linear-gradient(to bottom, #B1B9F8 0%, #ADB7F9 100%)',
+      'purple-gradient': ' linear-gradient(225deg, #ffc480, #dcc474, #b8c26f, #93be70, #6fb673, #4bac78, #299e7b, #078f7d);',
+      'green-gradient': 'linear-gradient(30deg, #289C7C, #42A978, #62B375);',
      
       },
 

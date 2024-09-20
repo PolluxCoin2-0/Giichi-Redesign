@@ -1,10 +1,10 @@
-// import Navbar from "../src/layout/Navbar";
 import HeroSection from "../src/pages/Hero/HeroSection";
 import AboutSection from "../src/pages/About/AboutSection";
+import GetQuote from "./comopnents/GetQuote";
 
 
-export {
-    // Navbar,
-    HeroSection,
+export { 
+    HeroSection, 
     AboutSection,
-}
+    GetQuote,
+};
