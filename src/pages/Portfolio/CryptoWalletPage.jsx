@@ -24,9 +24,9 @@ const CryptoWalletPage = () => {
   };
 
   return (
-    <div className="text-[#ffffff] bg-[#000000] pt-10  flex flex-row space-x-12 justify-between ">
-      <div className="w-[50%]">
-        <p className="text-5xl font-bold leading-tight">
+    <div className="text-[#ffffff] bg-[#000000] pt-10  flex flex-col md:flex-row space-x-0 md:space-x-12 justify-between ">
+      <div className="w-full md:w-[50%]">
+        <p className="text-3xl md:text-5xl font-bold leading-tight">
           We Create Products That Users Love
         </p>
         <p className="text-lg font-normal pt-6">
@@ -36,15 +36,15 @@ const CryptoWalletPage = () => {
         <img src={NftImg} alt="" className="w-[700px] text-center " />
       </div>
 
-      <div className="w-[50%]">
-        <p className="text-[#ffffff] text-3xl font-semibold pt-20">
+      <div className="w-full md:w-[50%]">
+        <p className="text-[#ffffff] text-2xl md:text-3xl font-semibold pt-8 md:pt-20">
           Crypto Wallet
         </p>
-        <p className="text-[#ffffff] text-5xl font-semibold pt-8">
+        <p className="text-[#ffffff] text-4xl md:text-5xl font-semibold pt-8">
           Crypto Wallet
         </p>
 
-        <p className="text-[#ffffff] text-lg font-normal pt-8 leading-8">
+        <p className="text-[#ffffff] text-md md:text-lg font-normal pt-8 leading-8">
           Have plans to kick-start your own NFT marketplace? You are in the
           right place! Maticz has developed <br /> and successfully launched
           more than 50+ NFT marketplaces which are now top-performing in the{" "}

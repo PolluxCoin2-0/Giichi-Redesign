@@ -35,9 +35,9 @@ const FaqSection = () => {
   ];
 
   return (
-    <div className="bg-[#F7B611] px-4 md:px-32 pt-20 pb-64">
-      <p className="text-3xl font-bold ">FAQ</p>
-      <p className="text-5xl font-bold text-[#ffffff] mt-4 leading-tight">
+    <div className="bg-[#F7B611] px-4 md:px-32 pt-12  md:pt-20 pb-64">
+      <p className="text-2xl md:text-3xl font-bold ">FAQ</p>
+      <p className="text-3xl md:text-5xl font-bold text-[#ffffff] mt-4 leading-tight">
         Solve the un-solved queries on <br /> your mind
       </p>
       <p className="text-lg font-semibold text-[#ffffff] mt-4">
@@ -45,7 +45,7 @@ const FaqSection = () => {
       </p>
 
       <div
-        className="bg-[#F5C34A] w-[70%] mt-10 p-10 rounded-md"
+        className="bg-[#F5C34A] w-full md:w-[70%] mt-10 p-0 md:p-10 rounded-md"
         style={{
           boxShadow:
             "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
@@ -64,7 +64,7 @@ const FaqSection = () => {
             <div
               className={`faq-content ${expandedIndex === index ? "expanded" : "collapsed"}`}
             >
-              <div className="pl-6 pb-8 text-[#3f310f]">
+              <div className="pl-6 pb-8 text-sm md:text-md text-[#3f310f] p-2">
                 {faq.answer}
               </div>
             </div>

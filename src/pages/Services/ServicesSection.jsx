@@ -29,65 +29,65 @@ const ServicesSection = () => {
     setViewConsult(section === "ConsultPage");
   };
   return (
-    <div className=" mt-32 w-full flex flex-row justify-between ">
-      <div className="w-[40%] bg-[#FBC901] ">
-        <p className="text-2xl font-bold text-end pr-12 pt-12 ">Services</p>
-        <p className="text-4xl font-bold text-end mt-5 pl-6 pr-12  ">
+    <div className=" mt-32 w-full flex flex-col md:flex-row justify-between ">
+      <div className="w-full md:w-[40%] bg-[#FBC901] px-4 md:px-0 ">
+        <p className="text-2xl font-bold text-start md:text-end pr-12 pt-12 ">Services</p>
+        <p className="text-3xl md:text-4xl font-bold text-start md:text-end mt-5 md:pl-6 md:pr-12  ">
           No Matter Whatever You Need, We Build
         </p>
-        <div className="mt-10">
+        <div className="mt-5 md:mt-10">
           <ul>
             <li
-              className="text-xl font-semibold p-5 w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5 w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("SoftwarePage")}
             >
               Software Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("WebPage")}
             >
               Web Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("MobilePage")}
             >
               Mobile App Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("BlockchainPage")}
             >
               Blockchain Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("MetaversePage")}
             >
               Metaverse Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("Web3Page")}
             >
               Web3 Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("DigitalPage")}
             >
               Digital Transformation
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-12"
+              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
               onClick={() => toggleSection("ConsultPage")}
             >
               IT Consulting
@@ -98,42 +98,42 @@ const ServicesSection = () => {
 
       {/* Conditionally render the NftPage component below */}
       {viewSoftwareDev && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <SoftwarePage />
         </div>
       )}
       {viewWebDev && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <WebPage />
         </div>
       )}
       {viewMobileDev && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <MobilePage />
         </div>
       )}
       {viewBlockchain && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <BlockchainPage />
         </div>
       )}
       {viewMetaverse && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <MetaversePage />
         </div>
       )}
       {viewWeb3 && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <Web3Page />
         </div>
       )}
       {viewDigital && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <DigitalPage />
         </div>
       )}
       {viewConsult && (
-        <div className="w-[60%]  ">
+        <div className="w-full md:w-[60%]  ">
           <ConsultPage />
         </div>
       )}

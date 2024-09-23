@@ -74,10 +74,10 @@ const PartnersSection = () => {
   };
 
   return (
-    <div className="bg-green flex flex-row justify-between  px-4 md:px-32 w-full pt-32 pb-32">
-      <div className="w-[50%]">
-        <p className="text-3xl font-bold">Partners</p>
-        <p className="text-5xl font-bold leading-snug pt-6 text-[#ffffff]">
+    <div className="bg-green flex flex-col md:flex-row justify-between  px-4 md:px-32 w-full pt-16 pb-16 md:pt-32 md:pb-32">
+      <div className="w-full md:w-[50%]">
+        <p className="text-2xl md:text-3xl font-bold">Partners</p>
+        <p className="text-3xl md:text-5xl font-bold leading-snug pt-6 text-[#ffffff]">
           Go-to Partner for the Leading <br />
           Brands and Startups  <br /> Worldwide
           to Unravel the Path  <br /> to Success
@@ -87,7 +87,7 @@ const PartnersSection = () => {
         </p>
       </div>
 
-      <div className="w-[35%]">
+      <div className="w-full md:w-[35%] mt-10 md:mt-0">
         <div className="slider-container relative">
           <Slider {...settings}>
            

@@ -96,7 +96,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar */}
-      <div className="flex flex-row justify-between items-center px-32 pt-4 bg-[#569F42]">
+      <div className="flex flex-row justify-between items-center px-4 md:px-32 pt-4 bg-[#569F42]">
         {/* Logo */}
         <img src={GiichiLogoImg} alt="Logo" className="h-10" />
         {/* Menu Icon */}
@@ -107,7 +107,7 @@ const Navbar = () => {
 
       {/* Sidebar with animation */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-[#000000] text-white flex flex-col px-32 pt-8 z-50 transition-transform duration-1000 ease-in-out ${
+        className={`fixed top-0 left-0 w-full h-screen bg-[#000000] text-white flex flex-col px-4 md:px-32 pt-8 z-50 transition-transform duration-1000 ease-in-out ${
           viewNavbar ? "translate-x-0" : "translate-x-full"
         }`}
       >

@@ -28,31 +28,31 @@ const PortfolioSection = () => {
   
 
     return (
-        <div className=" bg-[#000000] w-full flex flex-col items-start px-32 pt-24 pb-48">
-            <div className="w-full flex flex-row justify-between items-center">
+        <div className=" bg-[#000000] w-full flex flex-col items-start px-4 md:px-32 pt-12 pb-12 md:pt-24 md:pb-48">
+            <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div>
                     <p className="text-[#ffffff] text-4xl font-semibold">Portfolio</p>
                 </div>
 
-                <div>
-                    <ul className="flex flex-row space-x-3">
+                <div className="mt-4 md:mt-0">
+                    <ul className="flex flex-wrap md:flex-row space-x-0 md:space-x-3">
                         <li
-                            className="text-[#ffffff] text-xl font-medium px-8 py-4 rounded-full cursor-pointer hover:bg-green transition-colors"
+                            className="text-[#ffffff] text-lg md:text-xl font-medium px-4 py-2 md:px-8 md:py-4 rounded-full cursor-pointer hover:bg-green transition-colors"
                             onClick={() => toggleSection("NftPage")}>NFT</li>
 
-                        <li className="text-[#ffffff] text-xl font-medium cursor-pointer px-8 py-4 rounded-full hover:bg-green transition-colors"
+                        <li className="text-[#ffffff] text-lg md:text-xl font-medium cursor-pointer px-4 py-2 md:px-8 md:py-4 rounded-full hover:bg-green transition-colors"
                         onClick={() => toggleSection("Exchange")}>Exchange</li>
 
-                        <li className="text-[#ffffff] text-xl font-medium cursor-pointer px-8 py-4 rounded-full hover:bg-green transition-colors"
+                        <li className="text-[#ffffff] text-lg md:text-xl font-medium cursor-pointer px-4 py-2 md:px-8 md:py-4 rounded-full hover:bg-green transition-colors"
                         onClick={() => toggleSection("Tokonomics")}>Tokonomics</li>
 
-                        <li className="text-[#ffffff] text-xl font-medium cursor-pointer px-8 py-4 rounded-full hover:bg-green transition-colors"
+                        <li className="text-[#ffffff] text-lg md:text-xl font-medium cursor-pointer px-4 py-2 md:px-8 md:py-4 rounded-full hover:bg-green transition-colors"
                         onClick={() => toggleSection("Launchpad")}>Launchpad</li>
 
-                        <li className="text-[#ffffff] text-xl font-medium cursor-pointer px-8 py-4 rounded-full hover:bg-green transition-colors"
+                        <li className="text-[#ffffff] text-lg md:text-xl font-medium cursor-pointer px-4 py-2 md:px-8 md:py-4 rounded-full hover:bg-green transition-colors"
                         onClick={() => toggleSection("Mlm")}>MLM</li>
 
-                        <li className="text-[#ffffff] text-xl font-medium cursor-pointer px-8 py-4 rounded-full hover:bg-green transition-colors"
+                        <li className="text-[#ffffff] text-lg md:text-xl font-medium cursor-pointer px-4 py-2 md:px-8 md:py-4 rounded-full hover:bg-green transition-colors"
                         onClick={() => toggleSection("Cryptowallet")}>Crypto Wallet</li>
                     </ul>
                 </div>
