@@ -108,7 +108,7 @@ const GetQuote = ({onClose}) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm pt-[550px] md:pt-0 overflow-auto md:overflow-hidden">
+    <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm pt-[700px] px-4 md:px-0 md:pt-0 overflow-auto md:overflow-hidden">
       <div className="relative w-full md:w-[60%] flex flex-col justify-center items-center p-2 md:p-4 ">
         {/* Close Icon */}
         <div className="absolute top-[-2px] left-[-2px] cursor-pointer bg-[#FFC107] px-2 py-2 rounded-full text-[#000000]"
