@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
     <div className="bg-[#000000] flex flex-col md:flex-row  justify-center px-4 md:px-64 pt-24 pb-32">
       <div>
         <p className="text-[#ffffff] text-3xl md:text-4xl font-semibold">Testimonials</p>
-        <p className="text-[#ffffff] text-4xl md:text-6xl font-bold pt-8 leading-tight">
+        <p className="text-[#ffffff] text-3xl md:text-6xl font-bold pt-8 leading-tight">
           Tales of Triumph from <br /> Our Happy Clients
         </p>
         <p className="text-[#ffffff] text-lg md:text-xl font-semibold pt-5">

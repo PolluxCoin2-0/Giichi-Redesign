@@ -2,7 +2,7 @@ import TechImg  from "../../assets/tech_img.png";
 
 const TechnologiesSection = () => {
     return (
-        <div className="bg-[#000000] flex flex-col md:flex-row items-center space-x-0 md:space-x-12 px-4 md:px-32 pt-20 pb-8">
+        <div className="bg-[#000000] flex flex-col md:flex-row items-center space-x-0 md:space-x-12 px-4 md:px-32 pt-10 md:pt-20 pb-8">
             
             <div>
                 <img src={TechImg} alt="" className="w-[300px] md:w-[740px]" />
@@ -15,7 +15,7 @@ const TechnologiesSection = () => {
                 
                 {/* first tech row */}
                 <div className="flex flex-col md:flex-row justify-center  md:justify-between space-x-0 md:space-x-8 w-full mt-10">
-                    <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3  transition-transform transform hover:scale-105"
+                    <div className="w-full md:w-[230px] p-10 pt-3 pb-3  transition-transform transform hover:scale-105"
                       style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>
@@ -31,7 +31,7 @@ const TechnologiesSection = () => {
                     </div>
 
 
-                   <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3 mt-6 md:mt-0  transition-transform transform hover:scale-105"
+                   <div className="w-full md:w-[230px]  p-10 pt-3 pb-3 mt-6 md:mt-0  transition-transform transform hover:scale-105"
                      style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>
@@ -45,7 +45,7 @@ const TechnologiesSection = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3 mt-6 md:mt-0  transition-transform transform hover:scale-105"
+                    <div className="w-full md:w-[230px]  p-10 pt-3 pb-3 mt-6 md:mt-0  transition-transform transform hover:scale-105"
                       style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>
@@ -59,7 +59,7 @@ const TechnologiesSection = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3  mt-6 md:mt-0  transition-transform transform hover:scale-105"
+                    <div className="w-full md:w-[230px]  p-10 pt-3 pb-3  mt-6 md:mt-0  transition-transform transform hover:scale-105"
                       style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>
@@ -78,7 +78,7 @@ const TechnologiesSection = () => {
 
                  {/* Second Tech Row */}
                 <div className="flex flex-col md:flex-row justify-center md:justify-between space-x-0 md:space-x-8 w-full mt-8">
-                    <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3 transition-transform transform hover:scale-105"
+                    <div className="w-full md:w-[230px]  p-10 pt-3 pb-3 transition-transform transform hover:scale-105"
                       style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>
@@ -93,7 +93,7 @@ const TechnologiesSection = () => {
                     </div>
 
 
-                   <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3 mt-6 md:mt-0  transition-transform transform hover:scale-105"
+                   <div className="w-full md:w-[230px]  p-10 pt-3 pb-3 mt-6 md:mt-0  transition-transform transform hover:scale-105"
                      style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>
@@ -107,7 +107,7 @@ const TechnologiesSection = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3 mt-6 md:mt-0 transition-transform transform hover:scale-105"
+                    <div className="w-full md:w-[230px]  p-10 pt-3 pb-3 mt-6 md:mt-0 transition-transform transform hover:scale-105"
                       style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>
@@ -121,7 +121,7 @@ const TechnologiesSection = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-[230px] border-[1px] border-[#968e8e] p-10 pt-3 pb-3 mt-6 md:mt-0 transition-transform transform hover:scale-105 " 
+                    <div className="w-full md:w-[230px]  p-10 pt-3 pb-3 mt-6 md:mt-0 transition-transform transform hover:scale-105 " 
                       style={{
                         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)', // White shadow with moderate opacity
                       }}>

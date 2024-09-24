@@ -61,7 +61,7 @@ const BlogsSection = () => {
   
 
   return (
-    <div className="bg-[#000000] pt-20 pb-32  text-center px-4 md:px-32 ">
+    <div className="bg-[#000000] pt-20 pb-10 md:pb-32  text-center px-4 md:px-32 ">
       <p className="text-2xl md:text-3xl font-bold text-[#ffffff]">Blog</p>
       <p className="text-4xl md:text-5xl font-bold text-[#ffffff] mt-5">
         Ink and Insights - Dive into our Blog
@@ -71,7 +71,7 @@ const BlogsSection = () => {
       </p>
 
       <div className="mt-0">
-        <div className="bg-black mt-14 flex flex-row justify-center items-center relative pt-0">
+        <div className="bg-black mt-4 md:mt-14 flex flex-row justify-center items-center relative pt-0">
           {/* Set a max-width for the slider to ensure only 3 items are shown */}
           <div className="w-full max-w-8xl px-0 md:px-4">
             <Slider {...settings}>

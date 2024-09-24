@@ -10,10 +10,16 @@ const RewardsSection = () => {
 
            <div className="flex flex-col md:flex-row justify-between mt-4 md:mt-16 w-full px-32">
             
+            <div className="flex flex-row space-x-24">
             <p className=" p-5 "> <img src={AwardImg} alt="" className="w-56" /></p>
             <p className="  p-5 "><img src={AwardImg} alt="" className="w-56" /></p>
-            <p className=" p-5 "><img src={AwardImg} alt="" className="w-56" /></p>
-            <p className="  p-5 "><img src={AwardImg} alt="" className="w-56" /></p>
+            </div>
+          
+          <div className="flex flex-row space-x-24">
+          <p className=" p-5 "><img src={AwardImg} alt="" className="w-56" /></p>
+          <p className="  p-5 "><img src={AwardImg} alt="" className="w-56" /></p>
+          </div>
+          
            </div>
         </div>
     )

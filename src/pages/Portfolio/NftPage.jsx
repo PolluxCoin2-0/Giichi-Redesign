@@ -26,7 +26,7 @@ const NftPage = () => {
   return (
     <div className="text-[#ffffff] bg-[#000000] pt-10 flex flex-col md:flex-row space-x-0 md:space-x-12 justify-between">
       <div className="w-full md:w-[50%]">
-        <p className="text-3xl md:text-5xl font-bold leading-tight">
+        <p className="text-2xl md:text-5xl font-bold leading-tight">
           Showcasing our Unmatched Portfolio <br />
           of Excellence
         </p>
@@ -39,11 +39,11 @@ const NftPage = () => {
 
       <div className="w-full md:w-[50%]">
         <p className="text-[#ffffff] text-2xl md:text-3xl font-semibold pt-8 md:pt-20">NFT</p>
-        <p className="text-[#ffffff] text-4xl md:text-5xl font-semibold pt-8">
+        <p className="text-[#ffffff] text-3xl md:text-5xl font-semibold pt-8">
           NFT Marketplace
         </p>
 
-        <p className="text-[#ffffff] text-lg font-normal pt-8 leading-8">
+        <p className="text-[#ffffff] text-md md:text-lg font-normal pt-8 leading-8">
           Have plans to kick-start your own NFT marketplace? You are in the
           right place! Maticz has developed and successfully launched more than
           50+ NFT marketplaces which are now top-performing in the market. We
@@ -56,14 +56,14 @@ const NftPage = () => {
           <div>
             {/* Button */}
             <button
-              className={`bg-[#569F42] text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform relative ${
+              className={`bg-[#569F42] text-[#ffff] mt-8 button transition-transform duration-300 ease-out transform relative ${
                 isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
               }`}
               onClick={handleButtonClick1}
             >
               <a
                 href="#_"
-                className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
+                className="relative inline-flex items-center justify-center p-4 px-6 py-1 md:py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
               >
                 <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white transition duration-400 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease-out">
                   <svg
@@ -92,14 +92,14 @@ const NftPage = () => {
           <div>
             {/* Button */}
             <button
-              className={`bg-[#569F42] text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform relative ${
+              className={`bg-[#569F42] text-[#ffff] mt-8 button  transition-transform duration-300 ease-out transform relative ${
                 isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
               }`}
               onClick={handleButtonClick2}
             >
               <a
                 href="#_"
-                className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
+                className="relative inline-flex items-center justify-center p-4 px-6 py-1 md:py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
               >
                 <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white transition duration-400 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease-out">
                   <svg

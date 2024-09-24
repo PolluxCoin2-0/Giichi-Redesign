@@ -49,17 +49,17 @@ const ContactFormSection = () => {
         {" "}
         {/* Added relative positioning */}
         <div className="flex flex-row justify-between">
-          <p className="text-3xl md:text-4xl font-bold p-6 md:p-16 text-[#3f310f]">Contact Us</p>
+          <p className="text-xl md:text-4xl font-bold p-4 md:p-16 text-[#3f310f]">Contact Us</p>
           <div className="relative">
             {/* Apply absolute positioning to the image */}
             <img
               src={TechImg}
               alt=""
-              className="w-40 md:w-80 -mt-20  " // Adjust top and right overlap
+              className="w-40 md:w-80 -mt-20 -mr-5 " // Adjust top and right overlap
             />
           </div>
         </div>
-        <p className="pl-6 md:pl-16 mt-3 md:-mt-16 text-md font-medium text-[#3f310f]">
+        <p className="pl-4 md:pl-16 mt-3 md:-mt-16 text-md font-medium text-[#3f310f]">
           We’re excited to hear about your project. Schedule a call today and
           Connect with our experts. <br />
           At Giichi, We respect your privacy and Never share your details with
@@ -168,48 +168,48 @@ const ContactFormSection = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between ">
           {/* socials */}
           <div>
-            <div className="flex flex-col md:flex-row space-x-0 md:space-x-24 pl-8 md:pl-16">
+            <div className="flex flex-col md:flex-row space-x-0 md:space-x-24 pl-4 md:pl-16">
               <div className="flex flex-row  space-x-2 items-center">
-              <p className=" bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
+              <p className=" bg-[#F7B611] px-1 md:px-2 py-1 md:py-2 rounded-full animated-icon">
               <FaTelegramPlane size={24} />
               </p>
-                <p className="text-md font-semibold">Telegram Us:</p>
-                <p className="text-md font-bold">@giichiofficial</p>
+                <p className="text-sm md:text-md font-semibold">Telegram Us:</p>
+                <p className="text-sm md:text-md font-bold">@giichiofficial</p>
               </div>
 
               <div className="flex flex-row mt-4 md:mt-0 space-x-2 items-center">
-                <p className="bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
+                <p className="bg-[#F7B611] px-1 md:px-2 py-1 md:py-2 rounded-full animated-icon">
                   <FaDiscord size={24} />
                 </p>
-                <p className="text-md font-semibold">Discord: </p>
-                <p className="text-md font-bold">@xyzofficial</p>
+                <p className="text-sm md:text-md font-semibold">Discord: </p>
+                <p className="text-sm md:text-md font-bold">@xyzofficial</p>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row space-x-0 md:space-x-[90px] pl-8 md:pl-16 mt-6">
+            <div className="flex flex-col md:flex-row space-x-0 md:space-x-[90px] pl-4 md:pl-16 mt-6">
               <div className="flex flex-row  space-x-2 items-center">
-                <p className=" bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
+                <p className=" bg-[#F7B611] px-1 md:px-2 py-1 md:py-2 rounded-full animated-icon">
                   <RiWhatsappFill size={24} />
                 </p>
-                <p className="text-md font-semibold">WhatsApp: </p>
-                <p className="text-md font-bold">+91 6345734324</p>
+                <p className="text-sm md:text-md font-semibold">WhatsApp: </p>
+                <p className="text-sm md:text-md font-bold">+91 6345734324</p>
               </div>
 
               <div className="flex flex-row  mt-4 md:mt-0 space-x-2 items-center ml-10">
-                <p className=" bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
+                <p className=" bg-[#F7B611] px-1 md:px-2 py-1 md:py-2 rounded-full animated-icon">
                   <MdEmail size={24} />
                 </p>
-                <p className="text-md font-semibold">Drop Email: </p>
-                <p className="text-md font-bold">giichixyz@gmail.com</p>
+                <p className="text-sm md:text-md font-semibold">Drop Email: </p>
+                <p className="text-sm md:text-md font-bold">giichixyz@gmail.com</p>
               </div>
             </div>
           </div>
 
           {/* Submit Button */}
-          <div className="flex items-center justify-between pl-8 md:pl-0 pr-16 mt-6 md:mt-0">
+          <div className="flex items-center justify-between pl-4 md:pl-0 pr-16 mt-6 md:mt-0">
             <button
               type="submit"
-              className="bg-[#F7B611] text-[#ffffff] hover:bg-[#999488] text-white font-bold py-3 px-8 text-lg rounded-lg transition-transform 
+              className="bg-[#F7B611] text-[#ffffff] hover:bg-[#999488] text-white font-bold py-2 md:py-3 px-8 text-lg rounded-lg transition-transform 
           transform hover:scale-105"
             >
               Submit

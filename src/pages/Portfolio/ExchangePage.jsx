@@ -54,7 +54,7 @@ const ExchangePage = () => {
           <div>
             {/* Button */}
             <button
-              className={`bg-[#569F42]   text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
+              className={`bg-[#569F42]   text-[#ffff] mt-8 button  transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
          ${isPopupOpen || isQuoteOpen ? "z-0" : "z-10"}`}
               onClick={handleButtonClick1}
             >

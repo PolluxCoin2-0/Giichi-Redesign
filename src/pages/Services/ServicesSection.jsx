@@ -38,56 +38,56 @@ const ServicesSection = () => {
         <div className="mt-5 md:mt-10">
           <ul>
             <li
-              className="text-xl font-semibold p-5 w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5 w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("SoftwarePage")}
             >
               Software Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("WebPage")}
             >
               Web Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("MobilePage")}
             >
               Mobile App Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("BlockchainPage")}
             >
               Blockchain Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("MetaversePage")}
             >
               Metaverse Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("Web3Page")}
             >
               Web3 Development
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("DigitalPage")}
             >
               Digital Transformation
             </li>
 
             <li
-              className="text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-4 md:pl-12"
+              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("ConsultPage")}
             >
               IT Consulting
