@@ -23,10 +23,10 @@ const ContactsSection = () => {
   };
 
     return (
-        <div className="bg-purple-gradient text-center pt-32 pb-32">
-               <p className="text-3xl font-bold ">Talk To Us</p>
-               <p className="text-6xl font-bold leading-tight mt-5">Empower Your Business with Our Fine <br/> Tuned  Digital Solutions</p>
-               <p className="text-xl font-medium mt-5">Take the First Step in creating a better tomorrow by joining hands with Giichi.</p>
+        <div className="bg-purple-gradient text-center pt-16 pb-16  px-4 md:px-32 md:pt-32 md:pb-32">
+               <p className="text-2xl md:text-3xl font-bold ">Talk To Us</p>
+               <p className="text-4xl md:text-6xl font-bold leading-tight mt-5">Empower Your Business with Our Fine <br/> Tuned  Digital Solutions</p>
+               <p className="text-lg md:text-xl font-medium mt-5">Take the First Step in creating a better tomorrow by joining hands with Giichi.</p>
 
                <div className="flex flex-row justify-center space-x-5 mt-8">
               <div>

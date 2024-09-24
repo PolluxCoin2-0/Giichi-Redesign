@@ -19,13 +19,13 @@ const HeroSection = () => {
     <div>
       <Navbar />
 
-      <div className="flex flex-row justify-between items-center px-32 bg-[#569F42] h-screen">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-32 bg-[#569F42] h-screen">
         <div>
-          <p className="text-[60px] font-bold -mt-48 text-[#ffff] leading-snug">
+          <p className="text-[33px] md:text-[60px] font-bold mt-8  md:-mt-48 text-[#ffff] leading-snug">
             Modernizing And <br />
             Transforming Businesses <br /> Digitally To Move Forward
           </p>
-          <p className="mt-6 text-xl font-medium leading-8 tracking-wide">
+          <p className="mt-6 text-md md:text-xl font-medium leading-6 md:leading-8 tracking-normal md:tracking-wide">
             Embrace our visionary software development services to navigate the
             ever- <br />
             changing business landscape. We help you stay ahead of industry
@@ -71,8 +71,8 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div>
-          <img src={HeroImg} alt="hero-image" className="" />
+        <div className="flex justify-center md:justify-normal">
+          <img src={HeroImg} alt="hero-image" className="w-[90%] md:w-full" />
         </div>
       </div>
 

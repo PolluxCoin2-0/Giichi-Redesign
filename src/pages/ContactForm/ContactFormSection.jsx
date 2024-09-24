@@ -42,24 +42,24 @@ const ContactFormSection = () => {
   };
 
   return (
-    <div className="bg-[#000000] flex flex-col items-center  pb-20">
+    <div className="bg-[#000000] flex flex-col items-center px-4 md:px-32 pb-20">
 
         {/* Form Section */}
-      <div className="w-[60%] bg-[#ffffff] -mt-32 relative pb-20 ">
+      <div className="w-full md:w-[60%] bg-[#ffffff] -mt-32 relative pb-20 ">
         {" "}
         {/* Added relative positioning */}
         <div className="flex flex-row justify-between">
-          <p className="text-4xl font-bold p-16 text-[#3f310f]">Contact Us</p>
+          <p className="text-3xl md:text-4xl font-bold p-6 md:p-16 text-[#3f310f]">Contact Us</p>
           <div className="relative">
             {/* Apply absolute positioning to the image */}
             <img
               src={TechImg}
               alt=""
-              className="w-80 -mt-20  " // Adjust top and right overlap
+              className="w-40 md:w-80 -mt-20  " // Adjust top and right overlap
             />
           </div>
         </div>
-        <p className="pl-16 -mt-16 text-md font-medium text-[#3f310f]">
+        <p className="pl-6 md:pl-16 mt-5 md:-mt-16 text-md font-medium text-[#3f310f]">
           We’re excited to hear about your project. Schedule a call today and
           Connect with our experts. <br />
           At Giichi, We respect your privacy and Never share your details with
