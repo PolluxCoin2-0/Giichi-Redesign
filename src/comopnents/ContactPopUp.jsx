@@ -35,7 +35,7 @@ const ContactPopUp = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex justify-center items-center px-2 md:px-0 bg-black bg-opacity-50 backdrop-blur-sm">
+    <div className="fixed inset-0 flex justify-center items-center px-4 md:px-0 bg-black bg-opacity-50 backdrop-blur-sm">
       <div
         className="relative bg-[#ffffff] w-full md:w-[35%] flex flex-col justify-center items-start text-left p-2"
         style={{
