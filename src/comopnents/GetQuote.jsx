@@ -109,7 +109,7 @@ const GetQuote = ({onClose}) => {
 
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm">
-      <div className="relative w-[60%] flex flex-col justify-center items-center p-4">
+      <div className="relative w-[60%] flex flex-col justify-center items-center p-4  ">
         {/* Close Icon */}
         <div className="absolute top-[-2px] left-[-2px] cursor-pointer bg-[#FFC107] px-2 py-2 rounded-full text-[#000000]"
          onClick={onClose}>
@@ -129,9 +129,9 @@ const GetQuote = ({onClose}) => {
 
           <div className="w-[90%] mt-8">
             <form onSubmit={handleSubmit}>
-              <div className="flex flex-row space-x-8 w-full">
+              <div className="flex flex-col md:flex-row space-x-0 md:space-x-8 w-full">
                 {/* Name Field */}
-                <div className="mb-4 w-[50%]">
+                <div className="mb-4 w-full md:w-[50%]">
                   <input
                     type="text"
                     name="name"
@@ -146,7 +146,7 @@ const GetQuote = ({onClose}) => {
                 </div>
 
                 {/* Email Field */}
-                <div className="mb-4 w-[50%]">
+                <div className="mb-4 w-full md:w-[50%]">
                   <input
                     type="email"
                     name="email"
@@ -161,9 +161,9 @@ const GetQuote = ({onClose}) => {
                 </div>
               </div>
 
-              <div className="flex flex-row space-x-8 w-full">
+              <div className="flex flex-col md:flex-row space-x-0 md:space-x-8 w-full">
                 {/* Contact Field */}
-                <div className="mb-4 w-[50%]">
+                <div className="mb-4 w-full md:w-[50%]">
                   <input
                     type="text"
                     name="contact"
@@ -178,7 +178,7 @@ const GetQuote = ({onClose}) => {
                 </div>
 
                 {/* Country Field */}
-                <div className="mb-4 w-[50%]">
+                <div className="mb-4 w-full md:w-[50%]">
                   <input
                     type="text"
                     name="country"
