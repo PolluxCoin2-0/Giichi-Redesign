@@ -108,22 +108,22 @@ const GetQuote = ({onClose}) => {
   };
 
   return (
-    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm">
-      <div className="relative w-[60%] flex flex-col justify-center items-center p-4  ">
+    <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm pt-[550px] md:pt-0 overflow-auto md:overflow-hidden">
+      <div className="relative w-full md:w-[60%] flex flex-col justify-center items-center p-2 md:p-4 ">
         {/* Close Icon */}
         <div className="absolute top-[-2px] left-[-2px] cursor-pointer bg-[#FFC107] px-2 py-2 rounded-full text-[#000000]"
          onClick={onClose}>
           <RiCloseLargeFill size={20} />
         </div>
         <div
-          className="w-full flex flex-col justify-center items-center p-4 bg-[#ffffff]"
+          className="w-full flex flex-col justify-center items-center p-0 md:p-4 bg-[#ffffff]"
           style={{
             boxShadow:
               "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
           }}
         >
-          <p className="text-2xl font-bold text-[#000000]">Request For Quote</p>
-          <p className="text-lg font-medium pt-3 text-[#000000]">
+          <p className="text-xl md:text-2xl font-bold text-[#000000] pt-5 md:pt-0">Request For Quote</p>
+          <p className="text-md md:text-lg font-medium pt-3 text-center text-[#000000] ">
             Discuss your project with us. We are waiting to serve you Better
           </p>
 
@@ -220,11 +220,11 @@ const GetQuote = ({onClose}) => {
                     Select Our Services
                   </h2>
                   <form onSubmit={handleSubmit1}>
-                    <div className="flex flex-wrap justify-between gap-6">
+                    <div className="flex flex-col md:flex-wrap justify-between gap-3 md:gap-6">
                       {servicesList.map((service, index) => (
                         <div
                           key={index}
-                          className="flex items-center space-x-2 bg-white shadow-md p-3 rounded-lg w-[31%]"
+                          className="flex items-center space-x-2 bg-white shadow-md p-3 rounded-lg w-full md:w-[31%]"
                           style={{
                             boxShadow:
                               "0 2px 20px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
@@ -239,7 +239,7 @@ const GetQuote = ({onClose}) => {
                           />
                           <label
                             htmlFor={`service-${index}`}
-                            className="text-sm text-[#868585]"
+                            className="text-sm text-[#868585] whitespace-nowrap truncate"
                           >
                             {service}
                           </label>
@@ -265,10 +265,10 @@ const GetQuote = ({onClose}) => {
                 />
               </div>
                
-               <div className="text-center">
+               <div className="text-center pb-5 md:pb-0">
                <button
                 type="submit"
-                className=" bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 font-bold transition duration-200 bg-[#FFC107] w-[10%] hover:bg-[#C9C9C9] text-[#000000]"
+                className=" bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 font-bold transition duration-200 bg-[#FFC107] w-[40%] md:w-[10%] hover:bg-[#C9C9C9] text-[#000000] "
               >
                 Submit
               </button>
