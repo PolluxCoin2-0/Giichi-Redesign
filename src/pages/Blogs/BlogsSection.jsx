@@ -27,21 +27,38 @@ const BlogsSection = () => {
 
   var settings = {
     dots: true,
-    autoplay: true, // Enable autoplay
+    autoplay: true,
     autoplaySpeed: 1000,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 4, // Default to 4 slides on large screens
     slidesToScroll: 1,
     prevArrow: <PreviousArrow />,
     nextArrow: <NextArrow />,
     appendDots: (dots) => (
       <div style={{ paddingBottom: "0px", margin: "0px" }}>
-        <ul style={{ margin: "0px", padding: "0px" }}> {dots} </ul>
+        <ul style={{ margin: "0px", padding: "0px" }}>{dots}</ul>
       </div>
     ),
     customPaging: (i) => <div className="dot"></div>, // Customize dots if needed
+    responsive: [
+      {
+        breakpoint: 1024, // For tablet and smaller screens
+        settings: {
+          slidesToShow: 3, // Show 3 slides at this breakpoint
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // For mobile devices
+        settings: {
+          slidesToShow: 1, // Show only 1 slide on mobile
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+  
 
   return (
     <div className="bg-[#000000] pt-20 pb-32  text-center px-4 md:px-32 ">
@@ -54,16 +71,16 @@ const BlogsSection = () => {
       </p>
 
       <div className="mt-0">
-        <div className="bg-black mt-14 flex  justify-center items-center relative pt-0">
+        <div className="bg-black mt-14 flex flex-row justify-center items-center relative pt-0">
           {/* Set a max-width for the slider to ensure only 3 items are shown */}
-          <div className="w-full max-w-8xl px-4">
+          <div className="w-full max-w-8xl px-0 md:px-4">
             <Slider {...settings}>
               {[...Array(6)].map((_, index) => (
                 <div key={index} className="p-6">
                   {" "}
                   {/* Add padding to create space */}
-                  <div className="w-full bg-[#1B1B1B] text-white h-auto rounded-3xl shadow-inner shadow-gray-400">
-                    <img src={BlogImg} alt="" className="rounded-t-3xl p-4" />
+                  <div className="w-full bg-[#1B1B1B] text-white h-auto rounded-lg shadow-inner shadow-gray-400">
+                    <img src={BlogImg} alt="" className="rounded-t-3xl p-4 w-full" />
 
                     <p className="text-left pl-4 text-[#adaaaa] pt-2 text-lg font-medium">
                       18 September 2024

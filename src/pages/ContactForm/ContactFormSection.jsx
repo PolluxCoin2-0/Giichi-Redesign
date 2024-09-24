@@ -42,10 +42,10 @@ const ContactFormSection = () => {
   };
 
   return (
-    <div className="bg-[#000000] flex flex-col items-center px-4 md:px-32 pb-20">
+    <div className="bg-[#000000] flex flex-col items-center px-4 md:px-32 pb-10 md:pb-20">
 
         {/* Form Section */}
-      <div className="w-full md:w-[60%] bg-[#ffffff] -mt-32 relative pb-20 ">
+      <div className="w-full md:w-[60%] bg-[#ffffff] -mt-32 relative pb-10 md:pb-20 ">
         {" "}
         {/* Added relative positioning */}
         <div className="flex flex-row justify-between">
@@ -59,17 +59,17 @@ const ContactFormSection = () => {
             />
           </div>
         </div>
-        <p className="pl-6 md:pl-16 mt-5 md:-mt-16 text-md font-medium text-[#3f310f]">
+        <p className="pl-6 md:pl-16 mt-3 md:-mt-16 text-md font-medium text-[#3f310f]">
           We’re excited to hear about your project. Schedule a call today and
           Connect with our experts. <br />
           At Giichi, We respect your privacy and Never share your details with
           anyone. Lets build together.
         </p>
         {/* form */}
-        <div className="p-10 ">
-          <form onSubmit={handleSubmit} className=" px-8 pt-6 mb-4">
-            <div className="flex flex-row justify-between w-full">
-              <div className="flex flex-col w-[40%]">
+        <div className="p-6 md:p-10 ">
+          <form onSubmit={handleSubmit} className=" px-0 md:px-8 pt-0 md:pt-6 mb-4">
+            <div className="flex flex-col md:flex-row justify-between w-full">
+              <div className="flex flex-col w-full md:w-[40%]">
                 {/* Name */}
                 <div className="mb-4">
                   <input
@@ -98,22 +98,24 @@ const ContactFormSection = () => {
                   />
                 </div>
 
-                {/* Comment */}
-                <div className="mb-4 pt-4">
-                  <textarea
-                    name="comment"
-                    id="comment"
-                    value={formData.comment}
+ {/* WhatsApp Number */}
+ <div className="mb-4 pt-4">
+                  <input
+                    type="tel"
+                    name="whatsappNumber"
+                    id="whatsappNumber"
+                    value={formData.whatsappNumber}
                     onChange={handleChange}
-                    placeholder="Comment"
-                    className="w-full px-2 py-3 border-b-[1px] border-[#999488] focus:outline-none focus:border-b-[#000000] placeholder-[#999488] resize-none"
-                    rows="3"
+                    placeholder="Your Whatsapp / Telegram / Skype
+"
+                    className="w-full px-2 py-3 border-b-[1px] border-[#999488] focus:outline-none focus:border-b-[#000000] placeholder-[#999488]"
                     required
                   />
                 </div>
+          
               </div>
 
-              <div className="flex flex-col w-[40%]">
+              <div className="flex flex-col w-full md:w-[40%]">
                 {/*Phone Number */}
                 <div className="mb-4">
                   <input
@@ -142,17 +144,17 @@ const ContactFormSection = () => {
                   />
                 </div>
 
-                {/* WhatsApp Number */}
-                <div className="mb-4 pt-4">
-                  <input
-                    type="tel"
-                    name="whatsappNumber"
-                    id="whatsappNumber"
-                    value={formData.whatsappNumber}
+               
+                      {/* Comment */}
+                      <div className="mb-4 pt-4">
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    value={formData.comment}
                     onChange={handleChange}
-                    placeholder="Your Whatsapp / Telegram / Skype
-"
-                    className="w-full px-2 py-3 border-b-[1px] border-[#999488] focus:outline-none focus:border-b-[#000000] placeholder-[#999488]"
+                    placeholder="Comment"
+                    className="w-full px-2 py-3 border-b-[1px] border-[#999488] focus:outline-none focus:border-b-[#000000] placeholder-[#999488] resize-none"
+                    rows="3"
                     required
                   />
                 </div>
@@ -160,11 +162,13 @@ const ContactFormSection = () => {
             </div>
           </form>
         </div>
+
+
         {/* Socials  */}
-        <div className="flex flex-row items-center justify-between ">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between ">
           {/* socials */}
           <div>
-            <div className="flex flex-row space-x-24 pl-16">
+            <div className="flex flex-col md:flex-row space-x-0 md:space-x-24 pl-8 md:pl-16">
               <div className="flex flex-row  space-x-2 items-center">
               <p className=" bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
               <FaTelegramPlane size={24} />
@@ -173,7 +177,7 @@ const ContactFormSection = () => {
                 <p className="text-md font-bold">@giichiofficial</p>
               </div>
 
-              <div className="flex flex-row  space-x-2 items-center">
+              <div className="flex flex-row mt-4 md:mt-0 space-x-2 items-center">
                 <p className="bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
                   <FaDiscord size={24} />
                 </p>
@@ -182,7 +186,7 @@ const ContactFormSection = () => {
               </div>
             </div>
 
-            <div className="flex flex-row space-x-[90px] pl-16 mt-6">
+            <div className="flex flex-col md:flex-row space-x-0 md:space-x-[90px] pl-8 md:pl-16 mt-6">
               <div className="flex flex-row  space-x-2 items-center">
                 <p className=" bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
                   <RiWhatsappFill size={24} />
@@ -191,7 +195,7 @@ const ContactFormSection = () => {
                 <p className="text-md font-bold">+91 6345734324</p>
               </div>
 
-              <div className="flex flex-row  space-x-2 items-center ml-10">
+              <div className="flex flex-row  mt-4 md:mt-0 space-x-2 items-center ml-10">
                 <p className=" bg-[#F7B611] px-2 py-2 rounded-full animated-icon">
                   <MdEmail size={24} />
                 </p>
@@ -202,7 +206,7 @@ const ContactFormSection = () => {
           </div>
 
           {/* Submit Button */}
-          <div className="flex items-center justify-between pr-16">
+          <div className="flex items-center justify-between pl-8 md:pl-0 pr-16 mt-6 md:mt-0">
             <button
               type="submit"
               className="bg-[#F7B611] text-[#ffffff] hover:bg-[#999488] text-white font-bold py-3 px-8 text-lg rounded-lg transition-transform 
@@ -216,12 +220,12 @@ const ContactFormSection = () => {
 
       {/* Visit Us Section */}
 
-      <div className="flex flex-row justify-between w-[60%] mt-10">
+      <div className="flex flex-row justify-between w-full md:w-[60%] mt-10">
      
 
-        <div className="w-[50%] ">
-            <p className="text-[#F7B611] text-4xl font-bold">Newsletter</p>
-            <p className="text-[#ffffff] pt-3 font-semibold text-xl">Subscribe or newsletter to get more technology updates.</p>
+        <div className="w-full md:w-[50%] ">
+            <p className="text-[#F7B611] text-2xl md:text-4xl font-bold">Newsletter</p>
+            <p className="text-[#ffffff] pt-3 font-semibold text-sm md:text-xl">Subscribe or newsletter to get more technology updates.</p>
             <input
                     type="email"
                     name="email"
@@ -229,7 +233,7 @@ const ContactFormSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Enter Your Email"
-                    className=" mt-5 w-[1140px] px-4 py-3 border-[1px] border-[#999488] bg-[#000000] focus:outline-none  placeholder-[#ffffff] text-xl font-semibold rounded-md "
+                    className=" mt-5 w-full md:w-[1140px] px-4 py-3 border-[1px] border-[#999488] bg-[#000000] focus:outline-none text-[#ffffff] placeholder-[#ffffff] text-md md:text-xl font-semibold rounded-md "
                     required
                   />
         </div>

@@ -3,8 +3,8 @@ import AwardImg from "../../assets/award_1.png";
 const RewardsSection = () => {
     return (
         <div className="bg-purple-gradient px-4 md:px-32 pt-8 pb-8 md:pt-20 md:pb-20 text-center ">
-           <p className="text-2xl md:text-3xl font-bold ">Rewards</p>
-           <p className="text-3xl md:text-5xl font-bold mt-4">Rewards and Recognitions</p>
+           <p className="text-xl md:text-3xl font-bold ">Rewards</p>
+           <p className="text-2xl md:text-5xl font-bold mt-4">Rewards and Recognitions</p>
            <p className="text-md md:text-lg font-semibold mt-4">Celebrating a Symphony of Success with our Rewards of Excellence and Recognitions that Spark Off</p>
 
 
