@@ -19,7 +19,7 @@ const HeroSection = () => {
     <div>
       <Navbar />
 
-      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-32 bg-[#569F42] h-screen">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-32 bg-[#569F42] h-auto md:h-screen">
         <div>
           <p className="text-[33px] md:text-[60px] font-bold mt-8  md:-mt-48 text-[#ffff] leading-snug">
             Modernizing And <br />
