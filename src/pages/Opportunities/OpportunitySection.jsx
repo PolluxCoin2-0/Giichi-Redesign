@@ -72,14 +72,14 @@ const OpportunitySection = () => {
     <div className="flex flex-row  space-x-5 mt-4">
               <div>
                   {/* Button */}
-            <button className={`bg-[#569F42]   text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
+            <button className={`bg-[#569F42]   text-[#ffff] mt-8 button transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
                 ${
                 isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
               }`}
               onClick={handleButtonClick1}>
               <a
                 href="#_"
-                className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
+                className="relative inline-flex items-center justify-center p-4 px-6 py-1 md:py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
               >
                 <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white transition duration-400 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease-out">
                   <svg
@@ -107,14 +107,14 @@ const OpportunitySection = () => {
 
               <div>
                   {/* Button */}
-            <button className={`bg-[#569F42]  text-[#ffff] mt-8 button rounded-xl transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
+            <button className={`bg-[#569F42]  text-[#ffff] mt-8 button  transition-transform duration-300 ease-out transform group-hover:-translate-x-1/2 relative 
                 ${
                 isPopupOpen || isQuoteOpen ? "z-0" : "z-10"
               }`}
               onClick={handleButtonClick2}>
               <a
                 href="#_"
-                className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
+                className="relative inline-flex items-center justify-center p-4 px-6 py-1 md:py-3 overflow-hidden font-medium text-indigo-600 transition duration-400 ease-out shadow-md group"
               >
                 <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white transition duration-400 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease-out">
                   <svg

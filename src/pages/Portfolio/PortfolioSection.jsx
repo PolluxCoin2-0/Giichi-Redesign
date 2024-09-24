@@ -31,7 +31,7 @@ const PortfolioSection = () => {
         <div className=" bg-[#000000] w-full flex flex-col items-start px-4 md:px-32 pt-12 pb-12 md:pt-24 md:pb-48">
             <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div>
-                    <p className="text-[#ffffff] text-4xl font-semibold">Portfolio</p>
+                    <p className="text-[#ffffff] text-3xl md:text-4xl font-semibold pl-3 md:pl-0">Portfolio</p>
                 </div>
 
                 <div className="mt-4 md:mt-0">

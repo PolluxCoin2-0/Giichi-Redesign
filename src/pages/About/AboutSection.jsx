@@ -49,7 +49,7 @@ const AboutSection = () => {
       </div>
 
       <div className="md:border-2  md:-mt-32"></div>
-      <div className="relative md:absolute md:-bottom-16 md:left-0 flex justify-center md:justify-end w-full px-4 md:px-32 mt-10 md:mt-0">
+      <div className="relative md:absolute md:-bottom-16 md:left-0 flex justify-center md:justify-end w-full px-0 md:px-32 mt-10 md:mt-0">
   <div className="bg-[#569F42] flex flex-col md:flex-row justify-between p-6 w-full md:w-[80%] rounded-tr-xl rounded-tl-xl rounded-bl-xl rounded-br-[60px]">
     <div className="w-full md:w-[32%] text-center mb-6 md:mb-0">
       <p className="text-3xl text-[#ffffff] font-bold md:border-r-2">
