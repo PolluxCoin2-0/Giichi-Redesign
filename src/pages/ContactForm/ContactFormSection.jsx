@@ -233,7 +233,7 @@ const ContactFormSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Enter Your Email"
-                    className=" mt-5 w-full md:w-[1140px] px-4 py-3 border-[1px] border-[#999488] bg-[#000000] focus:outline-none text-[#ffffff] placeholder-[#ffffff] text-md md:text-xl font-semibold rounded-md "
+                    className=" mt-5 w-full md:w-[995px] px-4 py-3 border-[1px] border-[#999488] bg-[#000000] focus:outline-none text-[#ffffff] placeholder-[#ffffff] text-md md:text-xl font-semibold rounded-md "
                     required
                   />
         </div>
