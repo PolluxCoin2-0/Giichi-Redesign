@@ -24,8 +24,8 @@ const CryptoWalletPage = () => {
   };
 
   return (
-    <div className="text-[#ffffff] bg-[#000000] pt-10  flex flex-col md:flex-row space-x-0 md:space-x-12 justify-between ">
-      <div className="w-full md:w-[50%]">
+    <div className="text-[#ffffff] bg-[#000000] pt-10  flex flex-col lg:flex-row space-x-0 lg:space-x-12 justify-between ">
+      <div className="w-full lg:w-[50%]">
         <p className="text-3xl md:text-5xl font-bold leading-tight">
           We Create Products That Users Love
         </p>
@@ -33,11 +33,13 @@ const CryptoWalletPage = () => {
           Get a Glimpse of our Dynamic Portfolio, illustrating our
           Record-breaking Products.
         </p>
-        <img src={NftImg} alt="" className="w-[700px] text-center " />
+        <div className="flex justify-center">
+        <img src={NftImg} alt="" className="w-[600px] md:w-[500px] lg:w-[600px] text-center" />
+        </div>
       </div>
 
-      <div className="w-full md:w-[50%]">
-        <p className="text-[#ffffff] text-2xl md:text-3xl font-semibold pt-8 md:pt-20">
+      <div className="w-full lg:w-[50%]">
+        <p className="text-[#ffffff] text-2xl md:text-3xl font-semibold pt-8 lg:pt-20">
           Crypto Wallet
         </p>
         <p className="text-[#ffffff] text-4xl md:text-5xl font-semibold pt-8">

@@ -13,7 +13,7 @@ const servicesList = [
   "Business Intelligence",
 ];
 
-const GetQuote = ({onClose}) => {
+const GetQuote = ({ onClose }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -108,11 +108,13 @@ const GetQuote = ({onClose}) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm pt-[550px] md:pt-0 overflow-auto md:overflow-hidden">
+    <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm pt-[700px] px-4 md:px-0 md:pt-0 overflow-auto md:overflow-hidden">
       <div className="relative w-full md:w-[60%] flex flex-col justify-center items-center p-2 md:p-4 ">
         {/* Close Icon */}
-        <div className="absolute top-[-2px] left-[-2px] cursor-pointer bg-[#FFC107] px-2 py-2 rounded-full text-[#000000]"
-         onClick={onClose}>
+        <div
+          className="absolute top-[-2px] left-[-2px] cursor-pointer bg-[#FFC107] px-2 py-2 rounded-full text-[#000000]"
+          onClick={onClose}
+        >
           <RiCloseLargeFill size={20} />
         </div>
         <div
@@ -122,7 +124,9 @@ const GetQuote = ({onClose}) => {
               "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
           }}
         >
-          <p className="text-xl md:text-2xl font-bold text-[#000000] pt-5 md:pt-0">Request For Quote</p>
+          <p className="text-xl md:text-2xl font-bold text-[#000000] pt-5 md:pt-0">
+            Request For Quote
+          </p>
           <p className="text-md md:text-lg font-medium pt-3 text-center text-[#000000] ">
             Discuss your project with us. We are waiting to serve you Better
           </p>
@@ -264,16 +268,15 @@ const GetQuote = ({onClose}) => {
                   className="w-full p-3 border-b bg-[#F5F5F5] border-[#C9C9C9] placeholder-[#818181] resize-none"
                 />
               </div>
-               
-               <div className="text-center pb-5 md:pb-0">
-               <button
-                type="submit"
-                className=" bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 font-bold transition duration-200 bg-[#FFC107] w-[40%] md:w-[10%] hover:bg-[#C9C9C9] text-[#000000] "
-              >
-                Submit
-              </button>
-               </div>
-            
+
+              <div className="text-center pb-5 md:pb-0">
+                <button
+                  type="submit"
+                  className=" bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 font-bold transition duration-200 bg-[#FFC107] w-[40%] md:w-[10%] hover:bg-[#C9C9C9] text-[#000000] "
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
