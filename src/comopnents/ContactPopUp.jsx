@@ -35,9 +35,9 @@ const ContactPopUp = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-center items-center px-4 md:px-0 bg-black bg-opacity-50 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex justify-center items-center px-4 md:px-20 lg:px-0 bg-black bg-opacity-50 backdrop-blur-sm">
       <div
-        className="relative bg-[#ffffff] w-full md:w-[35%] flex flex-col justify-center items-start text-left p-2"
+        className="relative bg-[#ffffff] w-full lg:w-[35%] flex flex-col justify-center items-start text-left p-2"
         style={{
           boxShadow:
             "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
@@ -54,7 +54,9 @@ const ContactPopUp = ({ onClose }) => {
           <img src={TechImg} alt="" className="w-10 md:w-56" />
         </div>
 
-        <p className="text-2xl md:text-3xl font-bold mb-4 px-4 pt-5">Connect With Us</p>
+        <p className="text-2xl md:text-3xl font-bold mb-4 px-4 pt-5">
+          Connect With Us
+        </p>
 
         <div className="w-full">
           <form onSubmit={handleSubmit} className="px-4 pt-4 mb-4">

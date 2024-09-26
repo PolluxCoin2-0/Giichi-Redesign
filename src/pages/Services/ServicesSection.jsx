@@ -31,63 +31,63 @@ const ServicesSection = () => {
   return (
     <div className=" mt-32 w-full flex flex-col md:flex-row justify-between ">
       <div className="w-full md:w-[40%] bg-[#FBC901] px-4 md:px-0 ">
-        <p className="text-2xl font-bold text-start md:text-end pr-12 pt-12 ">Services</p>
-        <p className="text-3xl md:text-4xl font-bold text-start md:text-end mt-5 md:pl-6 md:pr-12  ">
+        <p className="text-2xl md:text-xl lg:text-2xl font-bold text-start md:text-end pr-12 pt-12 ">Services</p>
+        <p className="text-3xl md:text-2xl lg:text-4xl font-bold text-start md:text-end mt-5 md:pl-6 md:pr-12  ">
           No Matter Whatever You Need, We Build
         </p>
         <div className="mt-5 md:mt-10">
           <ul>
             <li
-              className="text-lg md:text-xl font-semibold p-5 w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg md:text-lg lg:text-xl font-semibold p-5 w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("SoftwarePage")}
             >
               Software Development
             </li>
 
             <li
-              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg  md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("WebPage")}
             >
               Web Development
             </li>
 
             <li
-              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg  md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("MobilePage")}
             >
               Mobile App Development
             </li>
 
             <li
-              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg  md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("BlockchainPage")}
             >
               Blockchain Development
             </li>
 
             <li
-              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg  md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("MetaversePage")}
             >
               Metaverse Development
             </li>
 
             <li
-              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg  md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("Web3Page")}
             >
               Web3 Development
             </li>
 
             <li
-              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("DigitalPage")}
             >
               Digital Transformation
             </li>
 
             <li
-              className="text-lg md:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              className="text-lg md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("ConsultPage")}
             >
               IT Consulting

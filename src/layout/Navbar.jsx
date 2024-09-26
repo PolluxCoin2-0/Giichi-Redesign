@@ -96,7 +96,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar */}
-      <div className="flex flex-row justify-between items-center px-4 md:px-32 pt-4 bg-[#569F42]">
+      <div className="flex flex-row justify-between items-center px-4 md:px-10 lg:px-32 pt-4 bg-[#569F42]">
         {/* Logo */}
         <img src={GiichiLogoImg} alt="Logo" className="h-10" />
         {/* Menu Icon */}

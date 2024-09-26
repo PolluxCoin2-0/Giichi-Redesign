@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import BlogImg from "../../assets/BlogImg.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-
 const BlogsSection = () => {
   // Custom Arrow Components
   const PreviousArrow = (props) => {
@@ -50,7 +49,15 @@ const BlogsSection = () => {
         },
       },
       {
-        breakpoint: 768, // For mobile devices
+        breakpoint: 768, // For tablet devices
+        settings: {
+          slidesToShow: 2, // Show only 1 slide on mobile
+          slidesToScroll: 1,
+        },
+      },
+
+      {
+        breakpoint: 414, // For mobile devices
         settings: {
           slidesToShow: 1, // Show only 1 slide on mobile
           slidesToScroll: 1,
@@ -58,10 +65,9 @@ const BlogsSection = () => {
       },
     ],
   };
-  
 
   return (
-    <div className="bg-[#000000] pt-20 pb-10 md:pb-32  text-center px-4 md:px-32 ">
+    <div className="bg-[#000000] pt-20 pb-10 lg:pb-32  text-center px-4 md:px-10 lg:px-32 ">
       <p className="text-2xl md:text-3xl font-bold text-[#ffffff]">Blog</p>
       <p className="text-4xl md:text-5xl font-bold text-[#ffffff] mt-5">
         Ink and Insights - Dive into our Blog
@@ -80,7 +86,11 @@ const BlogsSection = () => {
                   {" "}
                   {/* Add padding to create space */}
                   <div className="w-full bg-[#1B1B1B] text-white h-auto rounded-lg shadow-inner shadow-gray-400">
-                    <img src={BlogImg} alt="" className="rounded-t-3xl p-4 w-full" />
+                    <img
+                      src={BlogImg}
+                      alt=""
+                      className="rounded-t-3xl p-4 w-full"
+                    />
 
                     <p className="text-left pl-4 text-[#adaaaa] pt-2 text-lg font-medium">
                       18 September 2024
