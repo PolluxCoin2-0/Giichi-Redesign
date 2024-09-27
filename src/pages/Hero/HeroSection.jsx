@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../../layout/Navbar";
 import HeroImg from "../../assets/banner_img_home.png";
 import { IoIosChatbubbles } from "react-icons/io";
-import ContactPopUp from "../../comopnents/ContactPopUp"; 
+import ContactPopUp from "../../comopnents/ContactPopUp";
 
 const HeroSection = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -19,20 +19,21 @@ const HeroSection = () => {
     <div>
       <Navbar />
 
-      <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center md:items-start lg:items-center px-4 md:px-10 lg:px-32 bg-[#569F42]  h-auto md:h-screen ">
+      <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center md:items-start lg:items-center space-x-0 lg:space-x-20 xl:space-x-0 px-4 md:px-10 lg:px-12 xl:px-32 bg-[#569F42]  h-auto md:h-screen ">
         <div>
           {/* For Mobile and Laptop/Desktop */}
-         <p className="block md:hidden lg:block text-[33px] lg:text-[60px] font-bold mt-8 lg:-mt-48 text-[#ffff] leading-snug">
-         Modernizing And <br />
-        Transforming Businesses <br /> Digitally To Move Forward
-        </p>
+          <p className="block md:hidden xl:block text-[33px] lg:text-[34px] xl:text-[60px] font-bold mt-8 xl:-mt-48 text-[#ffff] leading-snug">
+            Modernizing And <br />
+            Transforming Businesses <br /> Digitally To Move Forward
+          </p>
 
-{/* For Tablet Devices */}
-<p className="hidden md:block lg:hidden md:text-[40px] text-[#ffff] leading-snug font-bold mt-10">
-  Modernizing And Transforming <br /> Businesses Digitally To Move Forward
-</p>
+          {/* For Tablet Devices */}
+          <p className="hidden md:block xl:hidden md:text-[40px] text-[#ffff] leading-snug font-bold mt-10 lg:-mt-40 ">
+            Modernizing And Transforming <br /> Businesses Digitally To Move
+            Forward
+          </p>
 
-          <p className="mt-6 text-md md:text-lg lg:text-xl font-medium md:font-semibold lg:font-medium leading-6 md:leading-8 tracking-normal md:tracking-wide">
+          <p className="mt-6 text-md md:text-lg lg:text-lg xl:text-xl font-medium md:font-semibold lg:font-medium leading-6 md:leading-8 tracking-normal md:tracking-wide">
             Embrace our visionary software development services to navigate the
             ever- <br />
             changing business landscape. We help you stay ahead of industry
@@ -78,8 +79,12 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="flex justify-center lg:justify-normal">
-          <img src={HeroImg} alt="hero-image" className="w-[90%] md:w-[60%] lg:w-full" />
+        <div className="flex justify-center lg:justify-normal lg:-mt-40">
+          <img
+            src={HeroImg}
+            alt="hero-image"
+            className="w-[90%] md:w-[60%] lg:w-full x:w-[80%]"
+          />
         </div>
       </div>
 

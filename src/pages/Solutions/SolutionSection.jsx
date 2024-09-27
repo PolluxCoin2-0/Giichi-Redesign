@@ -3,15 +3,15 @@ import SolutionImg from "../../assets/solution_img.png";
 const SolutionSection = () => {
     return (
         <div >
-            <div className="bg-purple-gradient flex flex-col lg:flex-row items-center space-x-0 lg:space-x-56 px-4 md:px-10 lg:px-32 pt-20 pb-8">
+            <div className="bg-purple-gradient flex flex-col lg:flex-row items-center space-x-0 lg:space-x-12 xl:space-x-56 px-4 md:px-10 lg:px-12 xl:px-32 pt-20 pb-8">
            
                <div>
-                <img src={SolutionImg} alt="" className="w-[300px] md:w-[400px] lg:w-[600px]" />
+                <img src={SolutionImg} alt="" className="w-[300px] md:w-[400px] lg:w-[80%] xl:w-[600px]" />
                </div>
                
                <div className="w-full">
                 <p className="text-xl md:text-2xl font-bold text-start">Solutions</p>
-                <p className="text-[30px] md:text-3xl lg:text-5xl font-bold leading-tight pt-4">We’re More than Just Developers. We Solve <br/>Real-world Problems By Creating Better <br/> Digital Solutions.</p>
+                <p className="text-[30px] md:text-3xl lg:text-2xl xl:text-5xl font-bold leading-tight pt-4">We’re More than Just Developers. We Solve <br/>Real-world Problems By Creating Better <br/> Digital Solutions.</p>
                 <p className="text-lg font-medium pt-3">As a full-stack software development agency, We make some extraordinary things that engage your users.</p>
 
                 

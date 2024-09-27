@@ -74,10 +74,10 @@ const PartnersSection = () => {
   };
 
   return (
-    <div className="bg-green flex flex-col lg:flex-row justify-between  px-4 md:px-10 lg:px-32 w-full pt-16 pb-16 lg:pt-32 lg:pb-32">
+    <div className="bg-green flex flex-col lg:flex-row justify-between  px-4 md:px-10 lg:px-12 xl:px-32 w-full pt-16 pb-16 lg:pt-32 lg:pb-32">
       <div className="w-full lg:w-[50%]">
         <p className="text-2xl md:text-3xl font-bold">Partners</p>
-        <p className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug pt-6 text-[#ffffff]">
+        <p className="text-3xl md:text-4xl xl:text-5xl font-bold leading-snug pt-6 text-[#ffffff]">
           Go-to Partner for the Leading <br />
           Brands and Startups  <br /> Worldwide
           to Unravel the Path  <br /> to Success
