@@ -1,6 +1,6 @@
 const SoftwarePage = () => {
   return (
-    <div className=" bg-[#E6E5E6] p-4 md:p-6 lg:p-12 flex flex-col justify-center gap-4 mb-0 ">
+    <div className=" bg-[#E6E5E6] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-center gap-4 mb-0 ">
       <p className="text-2xl md:text-3xl lg:text-3xl font-bold mt-5 md:mt-0">Software Development</p>
       <p className="text-md md:text-lg font-medium leading-7">
         We offer steadfast and future-ready software development solutions for

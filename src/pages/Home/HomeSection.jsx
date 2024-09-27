@@ -15,6 +15,7 @@ import RewardsSection from "../Rewards/RewardSection";
 import FaqSection from "../Faq/FaqSection";
 import ContactFormSection from "../ContactForm/ContactFormSection";
 import Footer from "../../layout/Footer";
+import Chatbot from '../../comopnents/Chatbot';
 
 const HomeSection = ()=> {
     return (
@@ -24,6 +25,8 @@ const HomeSection = ()=> {
         {/* Hero Section */}
           <HeroSection/>
 
+          {/* adding bots */}
+          <Chatbot />
           {/* About Section */}
           <AboutSection />
 

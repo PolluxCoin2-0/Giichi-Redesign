@@ -26,7 +26,7 @@ const ExchangePage = () => {
   return (
     <div className="text-[#ffffff] bg-[#000000] pt-10  flex flex-col lg:flex-row space-x-0 lg:space-x-12 justify-between ">
       <div className="w-full lg:w-[50%]">
-        <p className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <p className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
           We Create Products That Users Love
         </p>
         <p className="text-lg font-normal pt-6">
@@ -38,12 +38,12 @@ const ExchangePage = () => {
       </div>
 
       <div className="w-full lg:w-[50%]">
-        <p className="text-[#ffffff] text-2xl md:text-3xl font-semibold pt-8 lg:pt-20">Exchange</p>
-        <p className="text-[#ffffff] text-4xl md:text-5xl font-semibold pt-8 ">
+        <p className="text-[#ffffff] text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-semibold pt-8 xl:pt-20">Exchange</p>
+        <p className="text-[#ffffff] text-4xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold pt-8 ">
           Crypto Exchange
         </p>
 
-        <p className="text-[#ffffff] text-md md:text-lg font-normal pt-8 leading-8">
+        <p className="text-[#ffffff] text-md md:text-lg lg:text-md xl:text-lg font-normal pt-8 leading-8">
           Have plans to kick-start your own NFT marketplace? You are in the
           right place! Maticz has developed <br /> and successfully launched
           more than 50+ NFT marketplaces which are now top-performing in the{" "}

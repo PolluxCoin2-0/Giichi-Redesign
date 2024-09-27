@@ -1,6 +1,6 @@
 const WebPage = () => {
   return (
-    <div className=" bg-[#E6E5E6] p-4 md:p-6 lg:p-12 flex flex-col justify-center gap-4 pb-8 md:pb-5 mb-0 ">
+    <div className=" bg-[#E6E5E6] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-center gap-4 pb-8 md:pb-5 mb-0 ">
       <p className="text-2xl md:text-3xl font-bold mt-5 md:mt-0">Web Development</p>
       <p className="text-md md:text-md lg:text-lg  font-medium  leading-7">
         Your business website is an important opportunity to set your business

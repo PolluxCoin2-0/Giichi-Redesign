@@ -28,14 +28,14 @@ const PortfolioSection = () => {
   
 
     return (
-        <div className=" bg-[#000000] w-full flex flex-col items-start px-4 md:px-10 lg:px-32 pt-12 pb-12 lg:pt-24 lg:pb-48">
-            <div className="w-full flex flex-col lg:flex-row justify-between items-start lg:items-center">
+        <div className=" bg-[#000000] w-full flex flex-col items-start px-4 md:px-10 lg:px-12 xl:px-32 pt-12 pb-12 lg:pt-24 lg:pb-48">
+            <div className="w-full flex flex-col xl:flex-row justify-between items-start xl:items-center ">
                 <div>
                     <p className="text-[#ffffff] text-3xl md:text-4xl font-semibold pl-3 lg:pl-0">Portfolio</p>
                 </div>
 
-                <div className="mt-4 md:mt-2 lg:mt-0 ">
-                    <ul className="flex flex-wrap lg:flex-row space-x-0 lg:space-x-3">
+                <div className="mt-4 md:mt-2 lg:mt-5 xl:mt-0 ">
+                    <ul className="flex flex-wrap lg:flex-row space-x-0 lg:space-x-2 xl:space-x-3">
                         <li
                             className="text-[#ffffff] text-lg lg:text-xl font-medium px-4 py-2 md:px-8 md:py-4 rounded-full cursor-pointer hover:bg-green transition-colors"
                             onClick={() => toggleSection("NftPage")}>NFT</li>

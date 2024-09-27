@@ -13,8 +13,8 @@ import { TbSocial } from "react-icons/tb";
 
 const IndustriesSection = () => {
   return (
-    <div className="bg-purple-gradient w-full flex flex-col lg:flex-row space-x-0 lg:space-x-10 px-4 md:px-10 lg:px-32 pt-10 lg:pt-24 pb-10 lg:pb-24">
-      <div className="w-full lg:w-[40%]">
+    <div className="bg-purple-gradient w-full flex flex-col xl:flex-row space-x-0 xl:space-x-10 px-4 md:px-10 lg:px-12 xl:px-32 pt-10 lg:pt-12 xl:pt-24 pb-10 lg:pb-24">
+      <div className="w-full xl:w-[40%]">
         <p className="text-2xl md:text-3xl font-bold mt-0 md:mt-5">Industries</p>
         <p className="text-4xl md:text-4xl lg:text-5xl font-bold leading-snug pt-6">
           Transforming Industries to Become Smarter and Safer
@@ -24,7 +24,7 @@ const IndustriesSection = () => {
         </p>
       </div>
 
-      <div className="w-full lg:w-[60%]">
+      <div className="w-full xl:w-[60%]">
         {/* First Row */}
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-8 w-full p-2 md:p-4 ">
           <div

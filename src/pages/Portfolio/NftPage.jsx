@@ -26,7 +26,7 @@ const NftPage = () => {
   return (
     <div className="text-[#ffffff] bg-[#000000] pt-10 flex flex-col lg:flex-row space-x-0 lg:space-x-12 justify-between ">
       <div className="w-full lg:w-[50%]">
-        <p className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <p className="text-2xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
           Showcasing our Unmatched Portfolio <br />
           of Excellence
         </p>
@@ -42,8 +42,8 @@ const NftPage = () => {
       </div>
 
       <div className="w-full lg:w-[50%]">
-        <p className="text-[#ffffff] text-2xl md:text-3xl font-semibold pt-8 lg:pt-20">NFT</p>
-        <p className="text-[#ffffff] text-3xl md:text-4xl  lg:text-5xl font-semibold pt-8">
+        <p className="text-[#ffffff] text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-semibold pt-8 xl:pt-20">NFT</p>
+        <p className="text-[#ffffff] text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold pt-8">
           NFT Marketplace
         </p>
 

@@ -11,12 +11,12 @@ import { IoStarSharp } from "react-icons/io5";
 
 const TestimonialsSection = () => {
   return (
-    <div className="bg-[#000000] flex flex-col lg:flex-row  justify-center px-4 md:px-10 lg:px-64 pt-24 md:pt-12 lg:pt-24 pb-32">
+    <div className="bg-[#000000] flex flex-col lg:flex-row  justify-center px-4 md:px-10 lg:px-32 xl:px-64 pt-24 md:pt-12 lg:pt-24 pb-32">
       <div>
         <p className="text-[#ffffff] text-3xl lg:text-4xl font-semibold">
           Testimonials
         </p>
-        <p className="block md:hidden lg:block text-[#ffffff] text-3xl md:text-4xl lg:text-6xl font-bold pt-8 leading-tight">
+        <p className="block md:hidden lg:block text-[#ffffff] text-3xl md:text-4xl lg:text-4xl xl:text-6xl font-bold pt-8 leading-tight">
           Tales of Triumph from <br /> Our Happy Clients
         </p>
 
@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
         </p>
 
         <div
-          className="bg-[#121212] mt-5 w-full lg:w-[1000px] flex flex-col justify-center items-center text-center pb-10 md:pb-20 border-[1px] border-[#868585] "
+          className="bg-[#121212] mt-5 w-full lg:w-[800px] xl:w-[1000px] flex flex-col justify-center items-center text-center pb-10 md:pb-20 border-[1px] border-[#868585] "
           style={{
             boxShadow:
               "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
@@ -72,12 +72,12 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#ffffff] w-full lg:w-[20%] relative flex flex-col justify-around items-center mt-6 lg:mt-0">
+      <div className="bg-[#ffffff] w-full xl:w-[20%] relative flex flex-col justify-around items-center mt-6 lg:mt-0">
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
           <p className="flex justify-center text-[#B62FFD]">
             <FaAlgolia size={24} />
           </p>
-          <p className="text-xl md:text-2xl font-bold pt-2">AUDIOSWIM</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2">AUDIOSWIM</p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
@@ -91,28 +91,28 @@ const TestimonialsSection = () => {
           <p className="flex justify-center text-[#6F42C1]">
             <FaAngellist size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl font-bold pt-2 ">L BANK</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">L BANK</p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
           <p className="flex justify-center text-[#FD7E14]">
             <FaAccusoft size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl font-bold pt-2 ">SMART BBN</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">SMART BBN</p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
           <p className="flex justify-center text-[#7695FF]">
             <FaAward size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl font-bold pt-2 ">FINANCIO</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">FINANCIO</p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center pb-16 lg:pb-5 mt-4 lg:mt-0">
           <p className="flex justify-center text-[#B62FFD]">
             <FaBabyCarriage size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl font-bold pt-2 ">METAVERSE</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">METAVERSE</p>
         </div>
         <div className="bg-orange w-full absolute bottom-[-40px] h-[70px] text-xl font-bold text-center pt-6">
           View Testimonials

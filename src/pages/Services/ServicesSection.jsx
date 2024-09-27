@@ -32,7 +32,7 @@ const ServicesSection = () => {
     <div className=" mt-32 w-full flex flex-col md:flex-row justify-between ">
       <div className="w-full md:w-[40%] bg-[#FBC901] px-4 md:px-0 ">
         <p className="text-2xl md:text-xl lg:text-2xl font-bold text-start md:text-end pr-12 pt-12 ">Services</p>
-        <p className="text-3xl md:text-2xl lg:text-4xl font-bold text-start md:text-end mt-5 md:pl-6 md:pr-12  ">
+        <p className="text-3xl md:text-2xl xl:text-4xl font-bold text-start md:text-end mt-5 md:pl-6 md:pr-12  ">
           No Matter Whatever You Need, We Build
         </p>
         <div className="mt-5 md:mt-10">
