@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaAccusoft,
   FaAffiliatetheme,
@@ -10,6 +11,16 @@ import { IoPerson } from "react-icons/io5";
 import { IoStarSharp } from "react-icons/io5";
 
 const TestimonialsSection = () => {
+  const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const { clientX, clientY } = e;
+    const { left, top } = e.currentTarget.getBoundingClientRect();
+    const x = clientX - left;
+    const y = clientY - top;
+    setBgPosition({ x, y });
+  };
+
   return (
     <div className="bg-[#000000] flex flex-col lg:flex-row  justify-center px-4 md:px-10 lg:px-32 xl:px-64 pt-24 md:pt-12 lg:pt-24 pb-32">
       <div>
@@ -30,11 +41,13 @@ const TestimonialsSection = () => {
         </p>
 
         <div
-          className="bg-[#121212] mt-5 w-full lg:w-[800px] xl:w-[1000px] flex flex-col justify-center items-center text-center pb-10 md:pb-20 border-[1px] border-[#868585] "
+          className="bg-[#121212] mt-5 w-full lg:w-[800px] xl:w-[1000px] flex flex-col justify-center items-center text-center pb-10 md:pb-20 border-[1px] border-[#868585] relative overflow-hidden"
           style={{
             boxShadow:
               "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
+            background: `radial-gradient(circle at ${bgPosition.x}px ${bgPosition.y}px, rgba(235, 191, 14, 0.7), transparent)`, // Moving background effect
           }}
+          onMouseMove={handleMouseMove}
         >
           <p className="block md:hidden lg:block text-[#ffffff] w-full lg:w-[1000px] text-sm md:text-md leading-8 pt-10 md:pt-24 p-2 md:p-10">
             The services you offer are a broad range of services. All of your
@@ -69,6 +82,11 @@ const TestimonialsSection = () => {
             <IoStarSharp size={24} />
             <IoStarSharp size={24} />
           </div>
+          {/* Add an overlay for the blur effect */}
+          <div
+            className="absolute inset-0 blur-[100px] -z-10"
+            style={{ pointerEvents: "none" }}
+          />
         </div>
       </div>
 
@@ -77,7 +95,9 @@ const TestimonialsSection = () => {
           <p className="flex justify-center text-[#B62FFD]">
             <FaAlgolia size={24} />
           </p>
-          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2">AUDIOSWIM</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2">
+            AUDIOSWIM
+          </p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
@@ -91,28 +111,36 @@ const TestimonialsSection = () => {
           <p className="flex justify-center text-[#6F42C1]">
             <FaAngellist size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">L BANK</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">
+            L BANK
+          </p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
           <p className="flex justify-center text-[#FD7E14]">
             <FaAccusoft size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">SMART BBN</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">
+            SMART BBN
+          </p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
           <p className="flex justify-center text-[#7695FF]">
             <FaAward size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">FINANCIO</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">
+            FINANCIO
+          </p>
         </div>
 
         <div className="flex flex-row space-x-2 items-center pb-16 lg:pb-5 mt-4 lg:mt-0">
           <p className="flex justify-center text-[#B62FFD]">
             <FaBabyCarriage size={28} />{" "}
           </p>
-          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">METAVERSE</p>
+          <p className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold pt-2 ">
+            METAVERSE
+          </p>
         </div>
         <div className="bg-orange w-full absolute bottom-[-40px] h-[70px] text-xl font-bold text-center pt-6">
           View Testimonials

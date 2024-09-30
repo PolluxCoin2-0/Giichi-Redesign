@@ -224,7 +224,7 @@ const GetQuote = ({ onClose }) => {
                     Select Our Services
                   </h2>
                   <form onSubmit={handleSubmit1}>
-                    <div className="flex flex-col md:flex-wrap justify-between gap-3 md:gap-6">
+                    <div className="flex flex-wrap justify-between gap-3 md:gap-6">
                       {servicesList.map((service, index) => (
                         <div
                           key={index}

@@ -1,4 +1,4 @@
-import HeroSection from "../../../src/pages/Hero/HeroSection"
+import HeroSection from "../../../src/pages/Hero/HeroSection";
 import AboutSection from "../About/AboutSection";
 import ServicesSection from "../Services/ServicesSection";
 import SolutionsSection from "../Solutions/SolutionSection";
@@ -15,71 +15,65 @@ import RewardsSection from "../Rewards/RewardSection";
 import FaqSection from "../Faq/FaqSection";
 import ContactFormSection from "../ContactForm/ContactFormSection";
 import Footer from "../../layout/Footer";
-import Chatbot from '../../comopnents/Chatbot';
+import Chatbot from "../../comopnents/Chatbot";
 
-const HomeSection = ()=> {
-    return (
-       <div>
+const HomeSection = () => {
+  return (
+    <div>
+      {/* Hero Section */}
+      <HeroSection />
 
+      {/* adding bots */}
+      <Chatbot />
+      {/* About Section */}
+      <AboutSection />
 
-        {/* Hero Section */}
-          <HeroSection/>
+      {/* ServicesSection */}
+      <ServicesSection />
 
-          {/* adding bots */}
-          <Chatbot />
-          {/* About Section */}
-          <AboutSection />
+      {/* Solution Section */}
+      <SolutionsSection />
 
-           {/* ServicesSection */}
-           <ServicesSection />
+      {/* Technology Section */}
+      <TechnologiesSection />
 
-           {/* Solution Section */}
-           <SolutionsSection />
+      {/* Industries Section */}
+      <IndustriesSection />
 
-           {/* Technology Section */}
-           <TechnologiesSection />
+      {/* Portfolio Section */}
+      <PortfolioSection />
 
+      {/* Partners Section */}
+      <PartnersSection />
 
-           {/* Industries Section */}
-           <IndustriesSection />
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
-           {/* Portfolio Section */}
-           <PortfolioSection />
+      {/* Talk to Us */}
+      <ContactsSection />
 
+      {/* Blogs Page */}
+      <BlogsSection />
 
-           {/* Partners Section */}
-           <PartnersSection />
+      {/* Team Section */}
+      <TeamSection />
 
-           {/* Testimonials Section */}
-           <TestimonialsSection />
+      {/* Opportunity Section */}
+      <OpportunitySection />
 
-           {/* Talk to Us */}
-           <ContactsSection />
+      {/* Rewards Section */}
+      <RewardsSection />
 
-           {/* Blogs Page */}
-           <BlogsSection />
+      {/* FAQ Section */}
+      <FaqSection />
 
-           {/* Team Section */}
-           <TeamSection />
+      {/* Contact Us Form */}
+      <ContactFormSection />
 
-           {/* Opportunity Section */}
-           <OpportunitySection />
-
-
-           {/* Rewards Section */}
-           <RewardsSection />
-
-           {/* FAQ Section */}
-           <FaqSection />
-
-           {/* Contact Us Form */}
-           <ContactFormSection />
-
-           {/* Footer Section */}
-           <Footer />
-
-       </div>
-    )
-}
+      {/* Footer Section */}
+      <Footer />
+    </div>
+  );
+};
 
 export default HomeSection;
