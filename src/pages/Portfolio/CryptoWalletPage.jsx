@@ -34,7 +34,11 @@ const CryptoWalletPage = () => {
           Record-breaking Products.
         </p>
         <div className="flex justify-center">
-        <img src={NftImg} alt="" className="w-[600px] md:w-[500px] lg:w-[600px] text-center" />
+          <img
+            src={NftImg}
+            alt=""
+            className="w-[600px] md:w-[500px] lg:w-[600px] text-center"
+          />
         </div>
       </div>
 

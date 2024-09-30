@@ -33,3 +33,39 @@
     animation: scaleUpDown 3s ease-in-out infinite;
   }
   
+
+
+  /* .particle-text-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    margin: 100px;
+  }
+  
+  .particle-text {
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    color: #000;
+  }
+  
+  .particle-text .char {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .particle-effect {
+    transform: translate3d(calc(40px - 80px * var(--x)), calc(40px - 80px * var(--y)), 0);
+    opacity: 0;
+  }
+  
+  .particle-text .char {
+    transform: none;
+    opacity: 1;
+  }
+   */

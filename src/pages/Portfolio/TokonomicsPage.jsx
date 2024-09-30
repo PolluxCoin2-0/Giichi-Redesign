@@ -34,7 +34,11 @@ const TokonomicsPage = () => {
           Record-breaking Products.
         </p>
         <div className="flex justify-center">
-        <img src={NftImg} alt="" className="w-[600px] md:w-[500px] lg:w-[600px] text-center" />
+          <img
+            src={NftImg}
+            alt=""
+            className="w-[600px] md:w-[500px] lg:w-[600px] text-center"
+          />
         </div>
       </div>
 
@@ -42,7 +46,9 @@ const TokonomicsPage = () => {
         <p className="text-[#ffffff] text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-semibold pt-8 xl:pt-20">
           Tokonomics
         </p>
-        <p className="text-[#ffffff] text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-semibold pt-8">Tokonomics</p>
+        <p className="text-[#ffffff] text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-semibold pt-8">
+          Tokonomics
+        </p>
 
         <p className="text-[#ffffff] text-md md:text-lg font-normal pt-8 leading-8">
           Have plans to kick-start your own NFT marketplace? You are in the
