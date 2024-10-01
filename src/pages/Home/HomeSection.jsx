@@ -11,11 +11,11 @@ import ContactsSection from "../Contacts/ContactsSection";
 import BlogsSection from "../Blogs/BlogsSection";
 import TeamSection from "../Team/TeamSection";
 import OpportunitySection from "../Opportunities/OpportunitySection";
-import RewardsSection from "../Rewards/RewardSection";
+// import RewardsSection from "../Rewards/RewardSection";
 import FaqSection from "../Faq/FaqSection";
 import ContactFormSection from "../ContactForm/ContactFormSection";
 import Footer from "../../layout/Footer";
-import Chatbot from "../../comopnents/Chatbot";
+import Chatbot from "../../components/Chatbot";
 
 const HomeSection = () => {
   return (
@@ -62,7 +62,7 @@ const HomeSection = () => {
       <OpportunitySection />
 
       {/* Rewards Section */}
-      <RewardsSection />
+      {/* <RewardsSection /> */}
 
       {/* FAQ Section */}
       <FaqSection />

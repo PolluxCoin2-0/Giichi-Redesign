@@ -7,6 +7,7 @@ import MetaversePage from "./MetaversePage";
 import Web3Page from "./Web3Page";
 import DigitalPage from "./DigitalPage";
 import ConsultPage from "./ConsultPage";
+import MarketPage from "./MarketPage";
 
 const ServicesSection = () => {
   const [viewSoftwareDev, setViewSoftwareDev] = useState(true);
@@ -17,6 +18,7 @@ const ServicesSection = () => {
   const [viewWeb3, setViewWeb3] = useState(false);
   const [viewDigital, setViewDigital] = useState(false);
   const [viewConsult, setViewConsult] = useState(false);
+  const [viewMarket, setViewMarket] = useState(false);
 
   const toggleSection = (section) => {
     setViewSoftwareDev(section === "SoftwarePage");
@@ -27,6 +29,7 @@ const ServicesSection = () => {
     setViewWeb3(section === "Web3Page");
     setViewDigital(section === "DigitalPage");
     setViewConsult(section === "ConsultPage");
+    setViewMarket(section === "MarketPage");
   };
   return (
     <div className=" mt-32 w-full flex flex-col md:flex-row justify-between ">
@@ -86,6 +89,14 @@ const ServicesSection = () => {
               Digital Transformation
             </li>
 
+            
+            <li
+              className="text-lg md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
+              onClick={() => toggleSection("MarketPage")}
+            >
+              Digital Marketing
+            </li>
+
             <li
               className="text-lg md:text-lg lg:text-xl font-semibold p-5  w-full hover:bg-[#EDBF08] pl-0 md:pl-12"
               onClick={() => toggleSection("ConsultPage")}
@@ -130,6 +141,11 @@ const ServicesSection = () => {
       {viewDigital && (
         <div className="w-full md:w-[60%]  ">
           <DigitalPage />
+        </div>
+      )}
+        {viewMarket && (
+        <div className="w-full md:w-[60%]  ">
+          <MarketPage />
         </div>
       )}
       {viewConsult && (

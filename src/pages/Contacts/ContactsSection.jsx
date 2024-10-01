@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ContactPopUp from "../../comopnents/ContactPopUp";
-import GetQuote from "../../comopnents/GetQuote";
+import ContactPopUp from "../../components/ContactPopUp";
+import GetQuote from "../../components/GetQuote";
 
 const ContactsSection = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);

@@ -17,10 +17,12 @@ const IndustriesSection = () => {
       <div className="w-full xl:w-[40%]">
         <p className="text-2xl md:text-3xl font-bold mt-0 md:mt-5">Industries</p>
         <p className="text-4xl md:text-4xl lg:text-5xl font-bold leading-snug pt-6">
-          Transforming Industries to Become Smarter and Safer
+        Empowering Industries to Be Smarter and Safer
+
         </p>
         <p className=" text-xl font-medium pt-6">
-           At Giichi, We Tackle Some of the Worlds Biggest Challenges by <br/> Building Great  Digital Products.
+        At Giichi, we address some of the most significant challenges facing the world today by creating innovative digital products.
+
         </p>
       </div>
 

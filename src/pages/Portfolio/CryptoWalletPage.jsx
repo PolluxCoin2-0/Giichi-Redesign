@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NftImg from "../../assets/nft_img.png";
-import ContactPopUp from "../../comopnents/ContactPopUp";
-import GetQuote from "../../comopnents/GetQuote";
+import ContactPopUp from "../../components/ContactPopUp";
+import GetQuote from "../../components/GetQuote";
 
 const CryptoWalletPage = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);

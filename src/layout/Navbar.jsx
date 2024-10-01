@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   const services = [
-    "Software",
+    "Software ",
     "Mobile App",
     "Blockchain",
     "Web3",

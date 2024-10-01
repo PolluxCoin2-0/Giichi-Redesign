@@ -3,8 +3,8 @@ import { motion } from "framer-motion"; // Import framer-motion
 import Navbar from "../../layout/Navbar";
 import HeroImg from "../../assets/banner_img_home.png";
 import { IoIosChatbubbles } from "react-icons/io";
-import ContactPopUp from "../../comopnents/ContactPopUp"; // Fixed import typo
-
+import ContactPopUp from "../../components/ContactPopUp"; // Fixed import typo
+import Typewriter from "../../components/TypeWriter";
 
 const HeroSection = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -29,9 +29,8 @@ const HeroSection = () => {
           transition={{ duration: 1.8 }} // Transition duration
         >
           {/* For Mobile and Laptop/Desktop */}
-          <p className="block md:hidden xl:block text-[33px] lg:text-[34px] xl:text-[60px] font-bold mt-8 xl:-mt-48 text-[#ffff] leading-snug">
-            Modernizing And <br />
-            Transforming Businesses <br /> Digitally To Move Forward
+          <p className="block md:hidden xl:block ">
+            <Typewriter />
           </p>
 
           {/* For Tablet Devices */}
@@ -41,11 +40,12 @@ const HeroSection = () => {
           </p>
 
           <p className="mt-6 text-md md:text-lg lg:text-lg xl:text-xl font-medium md:font-semibold lg:font-medium leading-6 md:leading-8 tracking-normal md:tracking-wide">
-            Embrace our visionary software development services to navigate the
-            ever- <br />
-            changing business landscape. We help you stay ahead of industry
-            trends to <br />
-            secure your market dominance and achieve unrivaled success.
+            We offer visionary software development services to help businesses{" "}
+            <br />
+            navigate the dynamic digital landscape. Stay ahead of industry
+            trends, <br />
+            secure your market leadership, and achieve unparalleled success with{" "}
+            <br /> our innovative technology solutions.
           </p>
 
           <div className="flex flex-row items-center group relative">

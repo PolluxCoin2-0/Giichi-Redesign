@@ -1,12 +1,12 @@
 import { useState } from "react";
-import {
-  FaAccusoft,
-  FaAffiliatetheme,
-  FaAlgolia,
-  FaAngellist,
-  FaAward,
-  FaBabyCarriage,
-} from "react-icons/fa6";
+// import {
+//   FaAccusoft,
+//   FaAffiliatetheme,
+//   FaAlgolia,
+//   FaAngellist,
+//   FaAward,
+//   FaBabyCarriage,
+// } from "react-icons/fa6";
 import { IoPerson } from "react-icons/io5";
 import { IoStarSharp } from "react-icons/io5";
 
@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="bg-[#000000] flex flex-col lg:flex-row  justify-center px-4 md:px-10 lg:px-32 xl:px-64 pt-24 md:pt-12 lg:pt-24 pb-32">
+    <div className="bg-[#000000] flex flex-col lg:flex-row  justify-center px-4 md:px-10 lg:px-32 xl:px-40 pt-24 md:pt-12 lg:pt-24 pb-32">
       <div>
         <p className="text-[#ffffff] text-3xl lg:text-4xl font-semibold">
           Testimonials
@@ -40,8 +40,10 @@ const TestimonialsSection = () => {
           the success parade.
         </p>
 
+        
+
         <div
-          className="bg-[#121212] mt-5 w-full lg:w-[800px] xl:w-[1000px] flex flex-col justify-center items-center text-center pb-10 md:pb-20 border-[1px] border-[#868585] relative overflow-hidden"
+          className="bg-[#121212] mt-5 w-full lg:w-[800px] xl:w-[1200px] flex flex-col justify-center items-center text-center pb-10 md:pb-20 border-[1px] border-[#868585] relative overflow-hidden"
           style={{
             boxShadow:
               "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
@@ -90,7 +92,7 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#ffffff] w-full xl:w-[20%] relative flex flex-col justify-around items-center mt-6 lg:mt-0">
+      {/* <div className="bg-[#ffffff] w-full xl:w-[20%] relative flex flex-col justify-around items-center mt-6 lg:mt-0">
         <div className="flex flex-row space-x-2 items-center mt-4 lg:mt-0">
           <p className="flex justify-center text-[#B62FFD]">
             <FaAlgolia size={24} />
@@ -145,7 +147,7 @@ const TestimonialsSection = () => {
         <div className="bg-orange w-full absolute bottom-[-40px] h-[70px] text-xl font-bold text-center pt-6">
           View Testimonials
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

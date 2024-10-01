@@ -14,38 +14,43 @@ const FaqSection = () => {
       question:
         "Why should I choose Giichi for software consulting and development?",
       answer:
-        "We are a Software Consulting company trusted by leading brands and startups worldwide. Our team of passionate developers has the right technical expertise to deliver digital solutions that perfectly fit your business requirements. Startups to Fortune 500 companies rely on us in their digital transformation journey. We can help you too in creating a better future for your business.",
-    },
-    {
-      question: "How do I get started with Giichi's services?",
-      answer:
-        "Getting started with Giichi is easy. Just reach out to us with your project requirements, and we will provide a customized consultation to help you navigate through the best possible solutions for your business.",
+        "Giichi IT Solutions is a trusted partner for leading brands and startups around the globe. Our team of dedicated developers possesses the technical expertise to deliver digital solutions tailored to your business needs. From startups to Fortune 150 companies, we support our clients on their digital transformation journeys. Let us help you build a brighter future for your business.",
     },
     {
       question: "What type of Software Development Services do you offer?",
-      answer:
-        "We have a community of passionate and dedicated developers ready to help with a wide array of services such as Software Development, Web Development, Ecommerce Web Development, Mobile App Development, Digital Marketing Services, Blockchain Development, Digital Transformation, and much more.",
+      answer: [
+        "Our talented community of developers is ready to assist you with a diverse range of services, including",
+        [
+        "Custom software development",
+        "Mobile app development (iOS and Android)",
+        "Web application development",
+        "Cloud solutions and DevOps",
+        "Enterprise software integration",
+        "UI/UX design and prototyping",
+        "Software maintenance and support",
+        ]
+      ],
     },
     {
-      question: "How does Giichi guarantee the quality of its product?",
+      question: "How does Giichi IT Solutions ensure the quality of its products?",
       answer:
-        "We have a team of experienced developers, designers, testers, and digital marketers who are experts in handling all types of complex projects. We guarantee the quality of the product by using several proven practices throughout the product development. We create a complete prototype based on client requirements and at every stage of the development process, we get approval from the client before we carry forward with the next phase. Before launching into the market we test our products continuously to ensure that it is bug-free and fully functional as per the client's needs. We always provide our clients with more than what they expected.",
+        "Our experienced team of developers, designers, testers, and digital marketers excels at managing complex projects. We maintain product quality by employing established practices throughout the development lifecycle. We begin with a complete prototype based on your specifications and seek your approval at each stage before progressing. Before launching, we conduct thorough testing to ensure our products are bug-free and fully functional according to your needs. Our goal is always to exceed your expectations.",
     },
     // Add more FAQ items here
   ];
 
   return (
     <div className="bg-[#F7B611] px-4 md:px-10 lg:px-32 pt-12  md:pt-20 pb-64">
-      <p className="text-2xl md:text-3xl font-bold ">FAQ</p>
+      <p className="text-2xl md:text-3xl font-bold">FAQ</p>
       <p className="block md:hidden lg:block text-3xl md:text-5xl font-bold text-[#ffffff] mt-4 leading-tight">
-        Solve the un-solved queries on <br /> your mind
+        Find Answers to Your Questions
       </p>
 
       <p className="hidden md:block lg:hidden text-3xl md:text-4xl lg:text-5xl font-bold text-[#ffffff] mt-4 leading-tight">
-        Solve the un-solved queries on your mind
+        Find Answers to Your Questions
       </p>
       <p className="text-lg font-semibold text-[#ffffff] mt-4">
-        Connect with our experts for detailed technical consultation.
+        Connect with our experts for in-depth technical consultations.
       </p>
 
       <div
@@ -73,13 +78,19 @@ const FaqSection = () => {
               )}
             </div>
             <div
-              className={`faq-content ${
-                expandedIndex === index ? "expanded" : "collapsed"
+              className={`pl-6 pb-8 text-sm md:text-md text-[#3f310f] p-2 transition-all duration-300 ease-in-out ${
+                expandedIndex === index ? "block" : "hidden"
               }`}
             >
-              <div className="pl-6 pb-8 text-sm md:text-md text-[#3f310f] p-2">
-                {faq.answer}
-              </div>
+              {Array.isArray(faq.answer) ? (
+                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                  {faq.answer.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{faq.answer}</p>
+              )}
             </div>
           </div>
         ))}

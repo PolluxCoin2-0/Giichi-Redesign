@@ -1,11 +1,11 @@
 import { useState } from "react";
 import HeroImg from "../../assets/banner_img_home.png";
-import ContactPopUp from "../../comopnents/ContactPopUp";
-import GetQuote from "../../comopnents/GetQuote";
-import ProgressBar from "../../comopnents/ProgressBar";
+import ContactPopUp from "../../components/ContactPopUp";
+import GetQuote from "../../components/GetQuote";
+import ProgressBar from "../../components/ProgressBar";
 
 const testData = [
-  { bgcolor: "#F7B611", completed: 60, title: "No. of Clients", value: "200+" },
+  { bgcolor: "#F7B611", completed: 60, title: "No. of Clients", value: "70+" },
   {
     bgcolor: "#F7B611",
     completed: 50,
@@ -16,7 +16,7 @@ const testData = [
     bgcolor: "#F7B611",
     completed: 65,
     title: "No. of Employees",
-    value: "80+",
+    value: "40+",
   },
 ];
 
@@ -62,28 +62,27 @@ const OpportunitySection = () => {
 
       <div className="w-full lg:w-[60%]">
         <p className="text-4xl md:text-4xl lg:text-5xl text-[#ffffff] font-bold leading-tight  ">
-          Maximizing Opportunities for <br />
-          Businesses with Our Values
+          Unlocking Opportunities for Businesses with Our Core Values
         </p>
 
         <p className="text-sm md:text-xs lg:text-md text-[#a8a5a5] mt-4   ">
-          Maticz is your one-stop solution for all your software development
-          demands and requirements. From concept ideation to <br />
-          post-launch support, our comprehensive services cover every stage of
-          the software lifecycle. With a proven track record of <br />
-          delivering exceptional solutions, we have garnered a reputation as a
-          leading force in the industry. We value your feedback <br />
-          and work collaboratively with you to address any concerns, ensuring
-          that the final product is precisely what you envision.
+          Giichi, is your go-to partner for all your software development needs.
+          From initial concept to post-launch support, our comprehensive
+          services encompass every phase of the software lifecycle. With a
+          proven track record of delivering outstanding solutions, we have
+          established ourselves as a trusted leader in the industry. We value
+          your feedback and work closely with you to address any concerns,
+          ensuring that the final product aligns perfectly with your vision. 
         </p>
         <p className="text-sm md:text-xs lg:text-md text-[#a8a5a5] mt-4  ">
-          Our tailored approach ensures that we understand your specific
-          requirements and deliver results that exceed expectations. <br /> Our
-          team consists of seasoned professionals and creative minds who thrive
-          on pushing the boundaries of technology, and <br />
-          bring fresh perspectives and ingenious solutions to every project. We
-          keep you involved at every stage, providing transparent <br />
-          communication and delivering on time and within budget.
+        Our
+          customized approach allows us to thoroughly understand your unique
+          requirements and deliver results that surpass expectations. Our team
+          of experienced professionals and innovative thinkers thrives on
+          pushing the boundaries of technology, bringing fresh perspectives and
+          creative solutions to every project. We keep you engaged at every
+          stage, ensuring transparent communication and delivering on time and
+          within budget.
         </p>
 
         {/* Progress Bar */}

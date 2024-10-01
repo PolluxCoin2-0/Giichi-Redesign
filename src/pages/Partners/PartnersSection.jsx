@@ -1,12 +1,11 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { FaAlgolia } from "react-icons/fa6";
-import { FaAffiliatetheme } from "react-icons/fa6";
-import { FaAngellist } from "react-icons/fa6";
-import { FaAccusoft } from "react-icons/fa6";
-import { FaAward } from "react-icons/fa6";
-import { FaBabyCarriage } from "react-icons/fa6";
+import LBankImg from "../../assets/LBank1.png";
+import UvitokenImg from "../../assets/UvitokenLogo.png";
+import CoinStoreImg from "../../assets/CoinStore.png";
+import CoinBxImg from "../../assets/CoinBX.png";
+import AvanyaLabImg from "../../assets/AvanyaLab.png";
 
 // Custom Arrow Component
 const CustomPrevArrow = (props) => {
@@ -54,8 +53,8 @@ const CustomNextArrow = (props) => {
 const PartnersSection = () => {
   const settings = {
     dots: false,
-    autoplay: true,               // Enable autoplay
-    autoplaySpeed: 1000,           // Set the autoplay speed (3 seconds)
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 1000, // Set the autoplay speed (3 seconds)
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -64,10 +63,10 @@ const PartnersSection = () => {
     verticalSwiping: true,
     swipeToSlide: true,
     beforeChange: function (currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
+      // console.log("before change", currentSlide, nextSlide);
     },
     afterChange: function (currentSlide) {
-      console.log("after change", currentSlide);
+      // console.log("after change", currentSlide);
     },
     prevArrow: <CustomPrevArrow />, // Use custom prev arrow
     nextArrow: <CustomNextArrow />, // Use custom next arrow
@@ -79,8 +78,8 @@ const PartnersSection = () => {
         <p className="text-2xl md:text-3xl font-bold">Partners</p>
         <p className="text-3xl md:text-4xl xl:text-5xl font-bold leading-snug pt-6 text-[#ffffff]">
           Go-to Partner for the Leading <br />
-          Brands and Startups  <br /> Worldwide
-          to Unravel the Path  <br /> to Success
+          Brands and Startups <br /> Worldwide to Unravel the Path <br /> to
+          Success
         </p>
         <p className="text-xl font-semibold pt-5">
           Our Clients are a Testament to Our Excellence and Expertise
@@ -90,43 +89,47 @@ const PartnersSection = () => {
       <div className="w-full lg:w-[35%] mt-10 lg:mt-0">
         <div className="slider-container relative">
           <Slider {...settings}>
-           
-              <div className="bg-[#000000] text-[#ffffff]    p-5 mt-6 text-center text-lg font-semibold shadow-xl transition-transform transform hover:scale-105">
-              <p className="flex justify-center"><FaAlgolia  size={32}/></p> 
-              <p className="text-xl font-semibold pt-2">AUDIOSWIM</p>
-              
-              </div>
-           
-           
-              <div className="bg-[#000000] text-[#ffffff] p-5 mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
-              <p className="flex justify-center"><FaAffiliatetheme  size={32}/> </p>
-              <p className="text-xl font-semibold pt-2">CLICKB</p>
-              </div>
-            
-            
-              <div className="bg-[#000000] text-[#ffffff]  p-5  mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
-              <p className="flex justify-center"><FaAngellist  size={32} /> </p>
-              <p className="text-xl font-semibold pt-2">L BANK</p>
-              </div>
-           
-           
-              <div className="bg-[#000000] text-[#ffffff]  p-5  mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
-              <p className="flex justify-center"><FaAccusoft  size={32} /> </p> 
-              <p className="text-xl font-semibold pt-2">SMART BBN</p>
-              </div>
-           
-          
-              <div className="bg-[#000000] text-[#ffffff]  p-5 mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
-              <p className="flex justify-center"><FaAward  size={32} /> </p>
-              <p className="text-xl font-semibold pt-2">FINANCIO</p>
-              </div>
-            
-          
-              <div className="bg-[#000000] text-[#ffffff] p-5  mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
-              <p className="flex justify-center"><FaBabyCarriage size={32}/> </p>
-              <p className="text-xl font-semibold pt-2">RIO</p>
-              </div>
-           
+            <div className="bg-[#000000] text-[#ffffff]    p-5 mt-6 text-center text-lg font-semibold shadow-xl transition-transform transform hover:scale-105">
+              <p className="flex justify-center">
+                <img src={LBankImg} alt="" className="w-16 h-16" />
+              </p>
+              <p className="text-xl font-semibold pt-2">LBank</p>
+            </div>
+
+            <div className="bg-[#000000] text-[#ffffff] p-5 mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
+              <p className="flex justify-center">
+                <img src={CoinStoreImg} alt="" className="w-10 h-10" />{" "}
+              </p>
+              <p className="text-xl font-semibold pt-2">CoinStore</p>
+            </div>
+
+            <div className="bg-[#000000] text-[#ffffff]  p-5  mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
+              <p className="flex justify-center">
+                <img src={CoinBxImg} alt="" className="w-10 h-10" />{" "}
+              </p>
+              <p className="text-xl font-semibold pt-2">KoinBase</p>
+            </div>
+
+            <div className="bg-[#000000] text-[#ffffff]  p-5  mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
+              <p className="flex justify-center">
+                <img src={LBankImg} alt="" className="w-10 h-10" />{" "}
+              </p>
+              <p className="text-xl font-semibold pt-2">Avinya Labs</p>
+            </div>
+
+            <div className="bg-[#000000] text-[#ffffff]  p-5 mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
+              <p className="flex justify-center">
+                <img src={AvanyaLabImg} alt="" className="w-10 h-10" />{" "}
+              </p>
+              <p className="text-xl font-semibold pt-2">PolluxChain</p>
+            </div>
+
+            <div className="bg-[#000000] text-[#ffffff]  p-5 mt-6 text-center text-lg font-semibold  shadow-xl transition-transform transform hover:scale-105">
+              <p className="flex justify-center">
+                <img src={UvitokenImg} alt="" className="w-10 h-10" />{" "}
+              </p>
+              <p className="text-xl font-semibold pt-2">UviToken</p>
+            </div>
           </Slider>
         </div>
       </div>
