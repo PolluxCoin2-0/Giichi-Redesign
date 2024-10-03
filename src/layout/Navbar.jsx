@@ -107,7 +107,7 @@ const Navbar = () => {
 
       {/* Sidebar with animation */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-[#000000] text-white flex flex-col px-4 md:px-10 lg:px-0 xl:px-32 pt-8 z-50 transition-transform duration-1000 ease-in-out ${
+        className={`fixed top-0 left-0 w-full h-screen bg-[#000000] text-white flex flex-col px-4 md:px-10 lg:px-14 xl:px-32 pt-8 z-50 transition-transform duration-1000 ease-in-out ${
           viewNavbar ? "translate-x-0" : "translate-x-full"
         }`}
       >

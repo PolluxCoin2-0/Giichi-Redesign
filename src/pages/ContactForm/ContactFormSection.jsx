@@ -222,6 +222,7 @@ const ContactFormSection = () => {
               Submit
             </button>
           </div>
+          
         </div>
       </div>
 
@@ -246,6 +247,7 @@ const ContactFormSection = () => {
             required
           />
         </div>
+        
       </div>
     </div>
   );

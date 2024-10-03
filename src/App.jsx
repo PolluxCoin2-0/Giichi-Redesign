@@ -2,11 +2,8 @@ import HeroSection from "../src/pages/Hero/HeroSection";
 import GetQuote from "./components/GetQuote";
 import HomeSection from "./pages/Home/HomeSection";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import SoftwareDevelopment from "./pages/NavbarLayout/SoftwareDevelopment";
-// import SoftwareTesting from "./pages/NavbarLayout/SoftwareTesting";
-// import DigitalTransformation from "./pages/NavbarLayout/DigitalTransformation";
-// import ITConsulting from "./pages/NavbarLayout/ITConsulting";
-
+import Calendly from "./components/Calendly";
+import CareerPage from "./pages/Career/CareerPage";
 
 function App() {
   return (
@@ -17,10 +14,9 @@ function App() {
           <Route path="/" element={<HomeSection />} />
           <Route path="/home" element={<HomeSection />} />
           <Route path="/quote" element={<GetQuote />} />
-          {/* <Route path="/softwaredev" element={<SoftwareDevelopment />} /> */}
-          {/* <Route path="/softwaretest" element={<SoftwareTesting />} /> */}
-          {/* <Route path="/digitalTransformation" element={<DigitalTransformation />} /> */}
-          {/* <Route path="/itconsulting" element={<ITConsulting />} /> */}
+          <Route path="/calendly" element={<Calendly />} />
+          <Route path="/career" element={<CareerPage />} />
+         
         </Routes>
       </Router>
     </div>

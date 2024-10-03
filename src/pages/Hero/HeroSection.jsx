@@ -5,6 +5,7 @@ import HeroImg from "../../assets/banner_img_home.png";
 import { IoIosChatbubbles } from "react-icons/io";
 import ContactPopUp from "../../components/ContactPopUp"; // Fixed import typo
 import Typewriter from "../../components/TypeWriter";
+import Calendly from "../../components/Calendly";
 
 const HeroSection = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -83,6 +84,11 @@ const HeroSection = () => {
                 <span className="relative invisible">Talk to Experts</span>
               </a>
             </button>
+
+            <button type="button"
+            className="relative bg-[#000000] text-[#ffffff] w-fit px-9 py-3 shadow-[5px_5px_7px_0px_rgba(0,0,0,0.25)] text-[18px] 
+            cursor-pointer transition-all duration-500 font-medium border-3 border-transparent hover:text-black hover:border-[var(--bgOrange)]"
+           >Talk to experts</button>
           </div>
         </motion.div>
 
@@ -98,6 +104,11 @@ const HeroSection = () => {
             alt="hero-image"
             className="w-[90%] md:w-[60%] lg:w-full xl:w-[80%]"
           />
+           
+           {/* Calender notification */}
+          <div>
+            <Calendly />
+          </div>
         </motion.div>
       </div>
 
